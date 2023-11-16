@@ -4,7 +4,7 @@
 
 <!-- Holder for the website logo -->
 <span id="nav-logo-holder">
-    <img src="../images/logo.png" width="80px">
+    <img id="logo" src="../media/images/logo.png" width="80px">
 </span>
 <!-- Holder for the website name -->
 <span id="nav-title-holder">
@@ -18,6 +18,7 @@
     <a href="../pages/About us.php" class="nav-link <?php echo ($currentPage === 'about') ? 'selected' : ''; ?>">About Us</a>
     <a href="../pages/Contact.php" class="nav-link <?php echo ($currentPage === 'contact') ? 'selected' : ''; ?>">Contact</a>
     <a href="../pages/Table.php" class="nav-link <?php echo ($currentPage === 'Table') ? 'selected' : ''; ?>">Table</a>
+    <a href="../pages/PictureGallery.php" class="nav-link <?php echo ($currentPage === 'Pictur Gallery') ? 'selected' : ''; ?>">Pictur Gallery</a>
 </span>
 
 </nav>

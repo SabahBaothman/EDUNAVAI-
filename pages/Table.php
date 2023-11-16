@@ -1,7 +1,7 @@
 <!-- Set the page title and include the header file -->
 <?php
 $pageTitle = "EduNavAi";
-include('includes/header.php');
+include('../includes/header.php');
 ?>
 
 
