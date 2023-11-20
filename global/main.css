@@ -1,0 +1,711 @@
+:root {
+    --dark: #222222;
+    --darkPurple: #763DA5;
+    --lightPurple: #CFACD6;
+    --palePurple: #51456B;
+    --pink: #EB8DAF;
+    --darkBlue: #296BC5;
+    --lightBlue: #7CB8D1;
+}
+
+body,
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--dark) !important;
+}
+/* NABAR */
+/*----------------------------------------------*/
+nav {
+    padding: 1.2vw 0vw 1.2vw 5vw;
+    display: inline-flex;
+    width: 96vw;
+    /*  background-color: var(--bg-200);*/
+    /* margin: 2vw 1vw 0vw 1vw; */
+    /* border-radius: 3vw; */
+}
+nav * {
+    background-color: transparent !important;
+}
+
+nav.span {
+    height: 2vw;
+}
+
+#nav-links {
+    margin: auto;
+    float: right;
+
+}
+
+.nav-link+.nav-link {
+    margin-left: 1vw;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1vw;
+    padding: 10px;
+    height: 20%;
+}
+
+#nav-title-holder {
+    margin: auto auto auto 2vw;
+    color: #f2f2f2;
+
+}
+
+#nav-logo-holder {
+    margin: auto 0 auto 0;
+}
+
+
+
+/* GALLERY */
+/*----------------------------------------------*/
+.container {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 5vw;
+}
+
+.thumbnails {
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap images into rows */
+    justify-content: center;
+    /* Center images horizontally */
+    align-items: center;
+    /* Align images vertically within the container */
+}
+
+.row {
+    width: 100%;
+    display: block;
+    /* flex-direction: row; 
+    justify-content: space-between;  */
+}
+
+.thumbnails img {
+    margin: 0vw;
+    border-radius: 0.2vw;
+}
+
+.thumbnails img:hover {
+    opacity: 0.7;
+}
+
+.main-image {
+
+    position: relative;
+    margin-bottom: 20px;
+
+    img {
+        height: 15vw;
+        width: 15vw;
+        border-radius: 0.2vw;
+
+    }
+}
+
+.back-button {
+    text-align: center;
+}
+
+.back-button button {
+    margin: 0.5vw 0 0 0.5vw;
+    width: 1.5vw !important;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.1vw;
+}
+
+#next {
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#prev {
+    position: absolute;
+    left: 5vw;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#logo {
+    width: 2vw !important;
+}
+
+.container button {
+    background-color: #f2f2f2;
+    border: none !important;
+    border-radius: 2vw;
+    font-weight: bold;
+    color:var(--dark);
+}
+
+/*  Section 1: About Us  */
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+
+.left-half, .right-half {
+    width: 45%;
+    margin: 25px;
+}
+
+
+.about-section h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight:bolder;
+    color: white;
+}
+
+.about-section h1 span {
+    color: white;
+}
+
+
+.about-section h1 span:last-child {
+    background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text;
+    color: transparent; /* Set text color to transparent */
+}
+
+.about-section h5 {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Add margin to the bottom for spacing */
+    color: white;
+    font-weight: normal; /* Set font weight to normal */
+    letter-spacing: 1.5px; /* Adjust letter spacing as needed */
+    line-height: 1.5; /* Adjust the line height as needed */
+}
+
+.about-section button {
+    background-color: var(--darkPurple);
+    color: white;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px var(--darkPurple); /* Neon light effect */
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+.about-section button:hover {
+    background-color: lighten(var(--darkPurple), 10%);
+    box-shadow: 0 0 40px rgba(173, 216, 230, 1), 0 0 80px rgba(173, 216, 230, 1); /* Adjust the color and spread as needed */
+}
+
+/*  Section 2: Our Vision  */
+
+#vision-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh; /* Adjust the height based on your needs */
+    text-align: center;
+}
+
+#vision-section h4 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight:normal; 
+    text-transform: uppercase;
+}
+
+#vision-section h2 {
+    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.8em;
+}
+
+/*  Watch the Video  */
+.watch-video-section h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.watch-video-section .Know {
+    color: white;
+}
+
+.watch-video-section .More {
+    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.watch-video-section h4 {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Add margin to the bottom for spacing */
+    color: white;
+    font-weight: normal; /* Set font weight to normal */
+    letter-spacing: 1.5px; /* Adjust letter spacing as needed */
+    line-height: 1.5; /* Adjust the line height as needed */
+}
+
+.watch-video-section button {
+    background-color: var( --dark);
+    color: var(--darkPurple);
+    border: 3px solid var(--darkPurple); /* Set border color */
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+
+/* Add this to your existing CSS file */
+
+.services-section {
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: flex-start; /* Align children to the start of the flex container */
+}
+
+.services-section h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.services-section .Our {
+    color: white;
+}
+
+.services-section .Services {
+    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.services-section h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* service boxes */
+.service-boxes {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    align-items: center; /* Center the boxes vertically */
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+    margin-top: 50px; /* Add margin at the top if needed */
+    margin-left: 20px;
+}
+
+.service-box {
+    width: 300px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+    border-radius: 50px;
+    padding: 20px; /* Add padding for space inside the boxes */
+    text-align: center; /* Center text inside the boxes */
+    margin: 0 15px 20px; /* Add margin between each box and at the bottom of each box */
+    background-color: #2f2f2f;
+}
+
+.icon-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid transparent; /* Set a transparent border to preserve space for the border */
+    border-radius: 30px;
+    overflow: hidden; /* Ensure the gradient border is contained within the box */
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.icon-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    border-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    border-image-slice: 1;
+    border-radius: 30px;
+    box-sizing: border-box; /* Include the border in the element's dimensions */
+}
+
+.icon-box i {
+    font-size: 24px;
+    color: white;
+    z-index: 1; /* Place the content above the pseudo-element */
+}
+
+.service-box p {
+    color: white;
+    margin: 20px;
+}
+
+/* --- team-section ---*/ 
+
+/* styles.css */
+
+.team-section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+}
+
+.team-section h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: white; /* Set text color to white */
+}
+
+.team-section .Our {
+    color: white;
+}
+
+.team-section .Team {
+    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.team-section h4 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    align-items: center; /* Center the boxes vertically */
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+    margin-top: 50px; /* Add margin at the top if needed */
+    margin-left: 20px;
+}
+
+.team-card {
+    width: 500px; /* Set the desired width */
+    height: 200px; /* Set the desired height width */
+    border-radius: 50px;
+    padding: 20px; /* Add padding for space inside the boxes */
+    text-align: left; /* Align text to the left */
+    margin: 0 15px 20px; /* Add margin between each box and at the bottom of each box */
+    background-color: #2f2f2f;
+    display: flex; /* Use flexbox to control the layout */
+}
+
+.team-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-right: 20px; /* Add margin to separate the image from the text */
+
+}
+
+.team-info {
+    flex: 1; /* Allow the info to take the remaining space */
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.team-info h4 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    margin-bottom: 30px;
+    color: white; /* Set the color to white */
+}
+
+.social-icons i {
+    font-size: 24px; /* Set the desired font size */
+}
+
+
+.team-info button {
+    background-color: #2f2f2f;
+    color: var(--lightBlue);
+    border: 3px solid var(--lightBlue); /* Set border color */
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 10px; /* Adjust the font size as needed */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-half, .right-half {
+        width: 100%;
+    }
+}
+
+/* -- Resume page */
+
+.team-container {
+    margin: 20px;
+    margin-top: 70px;
+    
+}
+
+.team-container h1{
+    font-size: 45px;
+    color: white; /* Set text color to white */
+    text-align: center;
+}
+.team-container .Team {
+    color: white;
+}
+
+.team-container .Resume {
+    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.team-container h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+
+.resume-section {
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 10px auto; /* Set margin auto to center horizontally */
+    position: relative;
+    width: 1000px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-section .icon-box {
+    margin-top: 250px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+
+.left-section .icon-box i {
+    font-size: 24px;
+}
+
+.left-section h3 {
+    color:  white;
+  text-align: center;
+  margin-left: 110px;
+  
+
+}
+
+.left-section p {
+
+    color:  white;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: -10px;
+
+  
+  }
+
+  .line-divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40%;
+    border-left: 2px solid #fff;
+    height: 80%; /* Adjust the height as needed */
+    margin-top: 500px;
+}
+
+
+.line-dividerr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 60%;
+    border-left: 2px solid #fff;
+    height: 80%; /* Adjust the height as needed */
+    margin-top: 1250px;
+    z-index: 1; /* Ensure the line-divider is on top */
+}
+
+
+.right-section {
+    flex: 1;
+    text-align: right;
+    margin: 40px;
+    margin-left: 0px;
+    margin-right: 100px;
+}
+
+.right-section object {
+    width: 80%;
+    height: 600px;
+}
+
+/* Team Member 2 */
+.resume-section.team-member-2 {
+     position: relative; /* Add relative positioning to the parent */
+    flex-direction: row-reverse; /* Reverse the flex direction for Team Member 2 */
+}
+
+.resume-section.team-member-2 .left-section {
+    align-items: flex-end; /* Align items to the end of the column for Team Member 2 */
+}
+
+.resume-section.team-member-2 .left-section .icon-box {
+    margin-top: 250px;
+    margin-bottom: 10px;
+    margin-right: 150px; /* Adjust margin-right for Team Member 2 */
+}
+
+.resume-section.team-member-2 .left-section h3 {
+    color: white;
+    text-align: center;
+    margin-right: 110px; /* Adjust margin-right for Team Member 2 */
+}
+
+.resume-section.team-member-2 .left-section p {
+    color: white;
+    text-align: center;
+    margin-right: 110px;
+    margin-top: -10px;
+}
+
+.resume-section.team-member-2 .right-section {
+    text-align: left; /* Align text to the left for Team Member 2 */
+    margin: 40px;
+    margin-left: 100px;
+    margin-right: 0;
+}
+
+.resume-section.team-member-2 .right-section object {
+    width: 100%;
+    height: 600px;
+}
+
+/* ---video page  --- */
+
+.video-container {
+    text-align: center;
+    margin: 20px;
+    margin-top: 70px;
+}
+
+.video-container h1{
+    font-size: 45px;
+    color: white; /* Set text color to white */
+    text-align: center;
+}
+.video-containerr .Our {
+    color: white;
+}
+
+.video-container .Video {
+    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.video-container h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+.line-left,
+.line-bottom {
+    width: 50%;
+    position: absolute;
+}
+
+.line-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15%;
+    border-left: 4px solid #fff;
+    height: 75%; /* Adjust the height as needed */
+    margin-top: 417px;
+    border-image: linear-gradient(to bottom, var(--lightBlue), var(--darkPurple)) 1;
+}
+
+.line-bottom {
+    border-bottom: 4px solid #fff;
+    bottom: 0;
+    left: 40%;
+    bottom: -50%;
+    transform: translateX(-50%);
+    height: 75%; /* Adjust the height as needed */
+    border-image: linear-gradient(to right, var(--darkPurple), var(--lightBlue)) 1;
+}
