@@ -13,12 +13,66 @@ $pageTitle = "EduNavAi";
 $currentPage = "home";
 include('../includes/links.php');
 ?>
+<div class="center" id="main-page-conrtainer">
+    <h1><span>AI Powered</span></br>Roadmap Generator</h1>
+</br>
+    <p>Start your learning journy with with<br>your Education Navigator using AI</p>
+    <div id="index-info">
+        
+        <div>
+        <div id="gpt-logo-holder">
+            <img src="../media/images/gpt.png" width="5vw">
+        </div>
+        <div id="gpt-info-holder">
+            Powered with <b>GPT3.5</b> capabilities,<br>crafting dynamic roadmaps effortlessly.
+        </div>
+</div>
+<div>
+        <div id="learners-logo-holder">
+            <img src="../media/images/learners.png" width="5vw">
+        </div>
+        <div id="learners-info-holder">
+            <b>AI-generated</b> roadmaps can personalize<br>learning experiences for learners.
+        </div> 
+</div>
+
+    </div>
+</div>
+
+<div >
+<div id="circular-text-container">
+    <span id="circular-text"><img id="text-image" src="../media/images/start.png"></span>
+</div>
+
+  <a id="arrows-image-holder" href="#index-info">
+    <img id="arrows-image" src="../media/images/arrows.png" >
+    </a>
+</div>
 
 
 
+<script>
+    const textElement = document.getElementById('circular-text');
 
+// Define initial rotation angle
+let rotationAngle = 0;
 
-<!-- Include the footer file  -->
+// Set up animation loop
+function animateCircularText() {
+  // Update rotation angle
+  rotationAngle += 1;
+
+  // Apply rotation to the text element
+  textElement.style.transform = `translate(-50%, -50%) rotate(${rotationAngle}deg)`;
+
+  // Request next animation frame
+  requestAnimationFrame(animateCircularText);
+}
+
+// Start animation loop
+animateCircularText();
+</script>
+    <!-- Include the footer file  -->
 <?php
 include('../includes/footer.php');
 ?>
