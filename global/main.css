@@ -6,12 +6,19 @@
     --pink: #EB8DAF;
     --darkBlue: #296BC5;
     --lightBlue: #7CB8D1;
-}
+        --black: #1a181f;
+        --light-grey: #d5d3db;
+        --white: #fefeff;
+        --primary: #786dff;
+        --sky-blue: #20d1fd;
+        --black-purple: #332f3d;
+        --black-lighter: #131019;
+      }
 
 body,
 html {
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--dark) !important;
+    background-color: var(--black-lighter) !important;
 }
 /* NABAR */
 /*----------------------------------------------*/
@@ -43,7 +50,7 @@ nav.span {
 
 .nav-link {
     text-decoration: none;
-    color: #f2f2f2;
+    color: white !important;
     font-size: 1vw;
     padding: 10px;
     height: 20%;
@@ -708,4 +715,116 @@ nav.span {
     transform: translateX(-50%);
     height: 75%; /* Adjust the height as needed */
     border-image: linear-gradient(to right, var(--darkPurple), var(--lightBlue)) 1;
+}
+
+
+/* MAINPAGE */
+.center{
+    display: flex; justify-content: center;
+}
+#main-page-conrtainer{
+    margin-top: 6vw;
+    display: block;  
+
+}
+#main-page-conrtainer h1{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 900;
+    color: white;
+    margin: 0 !important;
+}
+#main-page-conrtainer p{
+    text-align: center;
+    font-size: 1vw;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: 0.2vw;
+}
+#main-page-conrtainer h1 span {
+    background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text;
+    color: transparent; /* Set text color to transparent */
+}
+
+#index-info{
+    width: 32%;
+    margin: 6vw auto;
+}
+#gpt-logo-holder img, #learners-logo-holder img{
+    height: 4vw;
+    width: auto;
+}
+#gpt-logo-holder, #learners-logo-holder{
+    height: 5vw;
+    width: fit-content;
+    display: inline-block;
+    margin-bottom: 1vw;
+
+}
+#gpt-info-holder, #learners-info-holder{
+    display: inline-block;
+    text-align: left;
+    width: auto !important;
+    vertical-align:top;
+    margin-left: 1vw;
+    font-size: 1.3vw;
+    color: white !important;
+    white-space: nowrap;
+    overflow: hidden;
+b{    background: linear-gradient(to right, var(--lightBlue), var(--primary));
+    -webkit-background-clip: text;
+    color: transparent;}
+
+
+}
+
+
+#bg-effect {
+    position: absolute !important;
+    z-index: 1;
+    bottom:0;
+    margin-bottom: -10vw !important;
+    width: 100% !important;
+    height: 40vw;
+    vertical-align: bottom;
+}
+
+.main-page-conrtainer *{
+    background-color: transparent;
+}
+
+#circular-text-container {
+
+    margin: 0 auto;
+
+  }
+
+  /* Define styles for the text element */
+  #circular-text {   
+    position: absolute;
+    top: 27vw;  
+    right: 23vw;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    white-space: nowrap;
+    font-size: 30px;
+  }
+
+  #circular-text #text-image{
+    height: 8vw;
+  }
+
+#arrows-image{
+    height: 2vw;
+    width: 2vw;
+  }
+
+#arrows-image-holder{
+    position: absolute;
+    top: 26vw;  
+    right: 30vw;
 }
