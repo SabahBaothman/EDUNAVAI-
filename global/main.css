@@ -264,41 +264,6 @@ nav.span {
     font-size: 1.8em;
 }
 
-/*  Watch the Video  */
-.watch-video-section h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-.watch-video-section .Know {
-    color: white;
-}
-
-.watch-video-section .More {
-    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.watch-video-section h4 {
-    margin-top: 10px;
-    margin-bottom: 20px; /* Add margin to the bottom for spacing */
-    color: white;
-    font-weight: normal; /* Set font weight to normal */
-    letter-spacing: 1.5px; /* Adjust letter spacing as needed */
-    line-height: 1.5; /* Adjust the line height as needed */
-}
-
-.watch-video-section button {
-    background-color: var( --dark);
-    color: var(--darkPurple);
-    border: 3px solid var(--darkPurple); /* Set border color */
-    padding: 10px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-top: 15px;
-    font-size: 16px; /* Adjust the font size as needed */
-}
 
 
 /* Add this to your existing CSS file */
@@ -720,11 +685,11 @@ nav.span {
 
 /* MAINPAGE */
 .center{
-    display: flex; justify-content: center;
+    justify-content: center;
 }
 #main-page-conrtainer{
     margin-top: 6vw;
-    display: block;  
+    display: block; 
 
 }
 #main-page-conrtainer h1{
@@ -792,11 +757,79 @@ b{    background: linear-gradient(to right, var(--lightBlue), var(--primary));
 }
 
 .main-page-conrtainer *{
+
     background-color: transparent;
+}
+/*  Watch the Video  */
+
+.watch-video-section{
+    width: 60vw !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin: 10vw auto; 
+}
+.watch-video-section div{
+    margin: 0 auto; 
+}
+.watch-video-section img{
+    width: 100% !important;
+}
+.watch-video-section h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    display: inline !important;
+}
+
+.watch-video-section .Know {
+    color: white;
+}
+
+.watch-video-section .More {
+    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.watch-video-section h4 {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Add margin to the bottom for spacing */
+    color: white;
+    font-weight: normal; /* Set font weight to normal */
+    letter-spacing: 1.5px; /* Adjust letter spacing as needed */
+    line-height: 1.5; /* Adjust the line height as needed */
+}
+
+.watch-video-section button {
+    background-color: var( --dark);
+    color: var(--darkPurple);
+    border: 3px solid var(--darkPurple); /* Set border color */
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px; /* Adjust the font size as needed */
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.watch-video-section button:hover {
+    background-color: var( --darkPurple);
+    color: white;
+    border: 3px solid var(--darkPurple); /* Set border color */
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px; /* Adjust the font size as needed */
+}
+.watch-video-section img{
+    border-radius: 0.5vw;
 }
 
 #circular-text-container {
-
+    position: absolute;
+    top: 26vw;  
+    right: 32vw;
     margin: 0 auto;
 
   }
@@ -804,27 +837,27 @@ b{    background: linear-gradient(to right, var(--lightBlue), var(--primary));
   /* Define styles for the text element */
   #circular-text {   
     position: absolute;
-    top: 27vw;  
-    right: 23vw;
-    /* position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    top: 50%;
+    transform: translate(-50%, -50%); 
     white-space: nowrap;
     font-size: 30px;
   }
 
-  #circular-text #text-image{
+#circular-text #text-image{
     height: 8vw;
-  }
+}
 
 #arrows-image{
-    height: 2vw;
-    width: 2vw;
+    height: 3vw;
+    width: 3vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
   }
 
 #arrows-image-holder{
     position: absolute;
     top: 26vw;  
-    right: 30vw;
+    right: 29vw;
 }
