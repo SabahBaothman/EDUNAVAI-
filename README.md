@@ -1,5 +1,18 @@
 # EDUNAVAI
-- [ ] Front End
-  - [ ] dwd
-  - [ ] d  
-- [ ] Backend
+- [ ] Front End:
+  - [ ] Landing Page.
+  - [ ] Roadmap Generator.
+  - [ ] Roadmap.
+  - [ ] About Us.
+  - [ ] Support.
+  - [ ] Video.
+  - [ ] Table.
+  - [ ] Resumes.
+  - [ ] Feedback.
+  - [x] Image Gallery. > Maybe we can modify the style.
+- [ ] Backend:
+  - [ ] Email.
+  - [ ] Form Validation.
+  - [x] Picture Galley. > Maybe we can modify the style.
+  - [ ] Roadmap form.
+  - [ ] Roadmap Generation + Results.
