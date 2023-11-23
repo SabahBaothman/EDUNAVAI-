@@ -9,10 +9,15 @@
   - [ ] Table.
   - [ ] Resumes.
   - [ ] Feedback.
+  - [x] Contact. > Wait for Dr. Samar's response to apply modifications.
   - [x] Image Gallery. > Maybe we can modify the style.
 - [ ] Backend:
-  - [ ] Email.
+  - [x] Email. > Wait for Dr. Samar's response to apply modifications.
   - [ ] Form Validation.
   - [x] Picture Galley. > Maybe we can modify the style.
   - [ ] Roadmap form.
   - [ ] Roadmap Generation + Results.
+- [ ] DB:
+  - [x] Send Contact Message.
+  - [ ] Send Feedback.
+  - [ ] ??
