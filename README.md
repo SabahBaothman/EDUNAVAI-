@@ -5,15 +5,15 @@
   - [ ] Roadmap.
   - [ ] About Us.
   - [ ] Support.
-  - [ ] Video.
+  - [x] Video.
   - [ ] Table.
-  - [ ] Resumes.
-  - [ ] Feedback.
+  - [x] Resumes.
+  - [x] Feedback.
   - [x] Contact. > Wait for Dr. Samar's response to apply modifications.
   - [x] Image Gallery. > Maybe we can modify the style.
 - [ ] Backend:
   - [x] Email. > Wait for Dr. Samar's response to apply modifications.
-  - [ ] Form Validation.
+  - [x] Form Validation.
   - [x] Picture Galley. > Maybe we can modify the style.
   - [ ] Roadmap form.
   - [ ] Roadmap Generation + Results.
