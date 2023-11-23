@@ -19,6 +19,8 @@
     <a href="../pages/Contact.php" class="nav-link <?php echo ($currentPage === 'contact') ? 'selected' : ''; ?>">Contact</a>
     <a href="../pages/Table.php" class="nav-link <?php echo ($currentPage === 'Table') ? 'selected' : ''; ?>">Table</a>
     <a href="../pages/PictureGallery.php" class="nav-link <?php echo ($currentPage === 'Pictur Gallery') ? 'selected' : ''; ?>">Pictur Gallery</a>
+    <a href="../pages/Feedback.php" class="nav-link <?php echo ($currentPage === 'Feedback') ? 'selected' : ''; ?>">Fedback</a>
+
 </span>
 
 </nav>
