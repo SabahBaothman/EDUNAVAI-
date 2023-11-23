@@ -49,8 +49,9 @@ include('../includes/links.php');
                 <p>CS Student At King </br> Abdulaziz Unevirsity.</p>
             </div>
             <div class="right-section">
-            <object data="/pdf/SABAHBAOTHMAN_CV.pdf" type="application/pdf" width="100%" height="600">
-           <p>It appears you don't have a PDF plugin for this browser. No worries, you can <a href="/pdf/your_resume.pdf">download the PDF file.</a></p>
+           <object data="/pdf/RimaAli-2023.pdf" type="application/pdf" width="100%" height="600">
+           <p>It appears you don't have a PDF plugin for this browser. No worries, you can <a href="/pdf/RimaAli-2023.pdf">download the PDF file.</a></p>
+
             </object>
             </div>
         </div>
