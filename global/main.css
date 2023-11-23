@@ -1054,9 +1054,7 @@ nav.span {
     text-align: center;
     padding: 20px;
     border-radius: 10px; /* Set border radius for the form */
-    margin-top: 70px;
-
-
+    margin-top: 6vw;
 }
 
 .feedback-section fieldset {
@@ -1069,9 +1067,9 @@ nav.span {
 }
 
 .feedback-section fieldset legend {
-    margin-left: 2px; /* Set margin-left for the legend */
+    margin-left: 20px; /* Set margin-left for the legend */
     color: white; /* Set text color to white */
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-size: 20px;
     font-weight: bold;
     margin-top: 40px;
@@ -1079,28 +1077,32 @@ nav.span {
 }
 
 .feedback-section h1{
-    font-size: 45px;
+    font-size: 3vw;
     color: white; /* Set text color to white */
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    font-weight: 900;
 
 }
 .feedback-section .A {
-    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
     -webkit-background-clip: text;
+    /* Clip the background to the text */
+    background-clip: text;
     color: transparent;
-}
+    /* Set text color to transparent */}
 
 .feedback-section .Feedback {
-    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
     -webkit-background-clip: text;
+    /* Clip the background to the text */
+    background-clip: text;
     color: transparent;
-}
+    /* Set text color to transparent */}
 
 .feedback-section h4 {
     color: white;
     text-align: center;
-    margin-bottom: 40px;
 
 }
 
@@ -1283,6 +1285,7 @@ nav.span {
     font-size: small;
     display: block;
 }
+
 
 
 
