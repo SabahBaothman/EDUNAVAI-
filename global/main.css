@@ -1046,3 +1046,245 @@ nav.span {
     /* Adjust the color and spread as needed */
 }
 /* Hide the default arrow */
+
+
+/*  feedback form */ 
+
+.feedback-section {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Set border radius for the form */
+    margin-top: 70px;
+
+
+}
+
+.feedback-section fieldset {
+    border: none; /* Remove the border */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    margin-left: 150px;
+    margin-right:150px ;
+    margin-bottom: 40px;
+}
+
+.feedback-section fieldset legend {
+    margin-left: 2px; /* Set margin-left for the legend */
+    color: white; /* Set text color to white */
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+
+}
+
+.feedback-section h1{
+    font-size: 45px;
+    color: white; /* Set text color to white */
+    text-align: center;
+    margin-bottom: 70px;
+
+}
+.feedback-section .A {
+    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.feedback-section .Feedback {
+    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.feedback-section h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.feedback-section .SectionTwo,
+.feedback-section .nameSection,
+.feedback-section .SectionThree {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items at the start of the container */
+    margin-bottom: 30px;
+    margin-left: -60px;
+}
+
+.feedback-section .nameSection label,
+.feedback-section .SectionTwo label,
+.feedback-section .SectionThree label {
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 90px; /* Adjust this value separately */
+
+}
+
+.feedback-section .nameSection .input,
+.feedback-section .SectionTwo .input,
+.feedback-section .SectionThree .input {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: -400px;
+}
+
+.feedback-section .nameSection .input input,
+.feedback-section .SectionTwo .input input,
+.feedback-section .SectionThree .input input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 30px;
+    background-color: #2f2f2f;
+    margin-top: 5px; /* Add margin between input boxes */
+    outline: none; /* Remove the blue outline on focus */
+    color: white; /* Set text color to white */
+}
+
+.feedback-details .label {
+    width: 40%;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: -585px;
+
+}
+.feedback-details .label1{
+    width: 40%;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: -780px;
+
+}
+
+.feedback-details .label2{
+    width: 40%;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: -710px;
+}
+
+.feedback-details .label3{
+    width: 40%;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: -320px;
+
+}
+
+
+.feedback-details input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.feedback-details label.radio-label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    display: inline-block;
+    line-height: 20px; /* Adjust as needed */
+    margin-right: 20px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.feedback-details label.radio-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px; /* Adjust the size of the custom radio */
+    height: 15px; /* Adjust the size of the custom radio */
+    border: 2px solid #2f2f2f;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.feedback-details input[type="radio"]:checked + label.radio-label::before {
+    background-color: var(--lightBlue); /* Change to red when checked */
+    border: none;
+}
+
+.feedback-details textarea {
+    margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #2f2f2f;
+    border-radius: 30px;
+    background-color: #2f2f2f;
+    margin-left: 30px;
+    color: white;
+    outline: none; 
+}
+
+.feedback-details input[type="checkbox"] {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  
+  .feedback-details .checkbox-label {
+    width: auto;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 5px;
+  }
+
+#courseInterest {
+    width: 25%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #2f2f2f;
+    border-radius: 30px;
+    background-color: #2f2f2f;
+    margin-left: 30px;
+    color: white;
+    outline: none;
+    
+}
+
+.feedback-section button {
+    color: white;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px var(--darkPurple); /* Neon light effect */
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px; /* Adjust the font size as needed */
+    background-color: var(--darkPurple);
+  
+}
+
+.feedback-section button[type="submit"]  {
+    background-color: rgba(118, 61, 165, 0.945);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px var(--darkPurple); /* Neon light effect */
+}
+
+.error {
+    color: red;
+    font-size: small;
+    display: block;
+}
+
+
+
+
+
