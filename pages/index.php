@@ -55,7 +55,7 @@ include('../includes/links.php');
             <span id="circular-text"><img id="text-image" src="../media/images/start.png"></span>
         </div>
 
-        <a id="arrows-image-holder" href="#watch-video-section">
+        <a id="arrows-image-holder" onclick="scrollToSection('watch-video-section')">
             <img id="arrows-image" src="../media/images/arrows.png">
         </a>
     </div>
@@ -82,6 +82,12 @@ include('../includes/links.php');
 
     // Start animation loop
     animateCircularText();
+
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
     </script>
     <!-- Include the footer file  -->
     <?php
