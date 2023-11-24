@@ -24,7 +24,8 @@ include('../includes/links.php');
         </div>
         <div class="right-half">
             <!-- Your image goes here -->
-            <img src="../media/About.png" alt="About Us Image">
+            <img src="../media/images/About.png" alt="About Us Image">
+
         </div>
     </div>
 
@@ -76,7 +77,7 @@ include('../includes/links.php');
     <div class="team-cards">
     <!-- Team Member 1 -->
     <div class="team-card">
-    <img src="../media/avatar1.png" alt="Team Member 1">
+        <img src="../media/images/avatar1.png" alt="Team Member 2">
         <div class="team-info">
             <h4>SABAH BAOTHMAN</h4>
             <div class="social-icons">
@@ -88,7 +89,7 @@ include('../includes/links.php');
 
     <!-- Team Member 2 -->
     <div class="team-card">
-    <img src="../media/avatar1.png" alt="Team Member 1">
+        <img src="../media/images/avatar1.png" alt="Team Member 1">
         <div class="team-info">
             <h4>RIMA ALGHAMDI</h4>
             <div class="social-icons">
