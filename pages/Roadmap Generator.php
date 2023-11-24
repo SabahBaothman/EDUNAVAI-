@@ -23,9 +23,9 @@ include('../includes/links.php');
             <br> Personalized Guidance
         </p>
 
-        <button id="start-roadmap" onclick="scrollToSection('scroll-here')">Lets Start</button>
-<div id="scroll-here">
-</div>
+        <button id="start-roadmap" onclick="scrollToSection('scroll-here-1')">Lets Start</button>
+        <div id="scroll-here-1">
+        </div>
         <form id="roadmap-form" class="roadmap-form">
             <div class="card-brands careers-card form-section" id="form-section-1">
                 <div class="section-head">
@@ -69,81 +69,107 @@ include('../includes/links.php');
                     </select>
                 </label>
             </div>
-            <div class="card-brands careers-card form-section" id="form-section-2">
-            <div class="section-head">
-                    <img class="form-head-img" src="../media/images/skill.png">
-                    <h4>STEP#2</h4>
-                    <span class="h-line">
-                        <hr>
-                    </span>
-                </div>
-                <h3>Learning Goals</h3>
-                <label for="goalInput">
-                    <p>Primary Learning Goal or Objective</p>
-                    <input type="text" name="goalInput" id="goalInput" placeholder="e.g., Web Development" />
-                </label>
+            <div class="full-width">
+                <button id="next" onclick="scrollToSection('scroll-here-2')">Next</button>
+                <div>
+                    <div id="scroll-here-2">
+                    </div>
+                    <div class="card-brands careers-card form-section" id="form-section-2">
+                        <div class="section-head">
+                            <img class="form-head-img" src="../media/images/skill.png">
+                            <h4>STEP#2</h4>
+                            <span class="h-line">
+                                <hr>
+                            </span>
+                        </div>
+                        <h3>Learning Goals</h3>
+                        <label for="goalInput">
+                            <p>Primary Learning Goal or Objective</p>
+                            <input type="text" name="goalInput" id="goalInput" placeholder="e.g., Web Development" />
+                        </label>
 
-                <label for="skillsInput">
-                    <p>Specific Skills/Topics</p>
-                    <input type="text" name="skillsInput" id="skillsInput" placeholder="e.g., React, Express.js" />
-                </label>
+                        <label for="skillsInput">
+                            <p>Specific Skills/Topics</p>
+                            <input type="text" name="skillsInput" id="skillsInput"
+                                placeholder="e.g., React, Express.js" />
+                        </label>
 
-                <label for="durationInput">
-                    <p>Learning Duration in Weeks</p>
-                    <input type="number" name="durationInput" id="durationInput" min="1" max="8"
-                        placeholder="e,g, 4 weeks">
-                </label>
-            </div>
-            <div class="card-brands careers-card form-section" id="form-section-3">
-            <div class="section-head">
-                    <img class="form-head-img" src="../media/images/experience.png">
-                    <h4>STEP#3</h4>
-                    <span class="h-line">
-                        <hr>
-                    </span>
-                </div>
-                <h3>Experience & Background</h3>
+                        <label for="durationInput">
+                            <p>Learning Duration in Weeks</p>
+                            <input type="number" name="durationInput" id="durationInput" min="1" max="8"
+                                placeholder="e,g, 4 weeks">
+                        </label>
+                    </div>
+                    <button id="next" onclick="scrollToSection('scroll-here-3')">Next</button>
+                    <div id="scroll-here-3">
+                    </div>
+                    <div class="card-brands careers-card form-section" id="form-section-3">
+                        <div class="section-head">
+                            <img class="form-head-img" src="../media/images/experience.png">
+                            <h4>STEP#3</h4>
+                            <span class="h-line">
+                                <hr>
+                            </span>
+                        </div>
+                        <h3>Experience & Background</h3>
 
-                <label for="levelInput">
-                    <p>Experience in the Field</p>
-                    <select name="levelInput" id="levelInput">
-                        <option selected value="default">Select a level</option>
-                        <option value="beginner">Beginner</option>
-                        <option value="intermediate">Intermediate</option>
-                        <option value="expert">Expert</option>
-                    </select>
-                </label>
-            </div>
+                        <label for="levelInput">
+                            <p>Experience in the Field</p>
+                            <select name="levelInput" id="levelInput">
+                                <option selected value="default">Select a level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="expert">Expert</option>
+                            </select>
+                        </label>
+                    </div>
 
+                    <button id="next" onclick="scrollToSection('scroll-here-5')">Next</button>
+                    <div id="scroll-here-4">
+                    </div>
+                    <div id="scroll-here-5">
+                    </div>
+                    <div class="card-brands careers-card form-section" id="form-section-4">
+                        <div class="section-head">
+                            <img class="form-head-img" src="../media/images/privacy.png">
+                            <h4>STEP#4</h4>
+                            <span class="h-line">
+                                <hr>
+                            </span>
+                        </div>
+                        <h3>Privacy & Data Usage</h3>
+                        <label>
+                            <p>EduNavAi values your privacy. We use your data to personalize your learning experience.
+                                <br> Your
+                                data will not be shared with third parties. Do you agree?</p>
+                        </label>
 
-            <div class="card-brands careers-card form-section" id="form-section-4">
-            <div class="section-head">
-                    <img class="form-head-img" src="../media/images/privacy.png">
-                    <h4>STEP#4</h4>
-                    <span class="h-line">
-                        <hr>
-                    </span>
-                </div>
-                <h3>Privacy & Data Usage</h3>
-                <label>
-                    <p>EduNavAi values your privacy. We use your data to personalize your learning experience. <br> Your
-                        data will not be shared with third parties. Do you agree?</p>
-                </label>
+                        <div id="agreement-holdre">
+                            <input type="checkbox" id="termsInput" name="termsInput" value="accepted">
+                            <label id="agree" for="termsInput">I agree</label>
+                        </div>
 
-                <div id="agreement-holdre">
-                    <input type="checkbox" id="termsInput" name="termsInput" value="accepted">
-                    <label id="agree" for="termsInput">I agree</label>
-                </div>
+                    </div>
+           >
+                        <input id="generate-button" type="submit" value="Generate Roadmap" />
 
-            </div>
-            <input type="reset" />
         </form>
     </div>
 
     <script>
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        }
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+            behavior: 'smooth'
+        });
+        event.preventDefault()
+    }
+
+    window.addEventListener('load', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
     </script>
     <!-- Include the footer file  -->
     <?php
