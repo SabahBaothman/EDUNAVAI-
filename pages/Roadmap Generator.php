@@ -150,26 +150,14 @@ include('../includes/links.php');
                         </div>
 
                     </div>
-           >
+         
                         <input id="generate-button" type="submit" value="Generate Roadmap" />
 
         </form>
     </div>
 
-    <script>
-    function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({
-            behavior: 'smooth'
-        });
-        event.preventDefault()
-    }
+    <script src="../js/GenerateRoadmapAPI.js">
 
-    window.addEventListener('load', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
     </script>
     <!-- Include the footer file  -->
     <?php
