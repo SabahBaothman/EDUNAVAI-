@@ -1520,5 +1520,48 @@ footer p {
 
 
 
+/* TABLE PAGE */
+#table-container{
+    margin-top: 3vw;
+}
+#table-container table{
+    margin: 3vw auto;
+    width: 50%;
+    display: block;
+    background-color: #211e29;
+    border: 1px solid #332f3d;
+    border-radius: .75rem;
+    align-items: center;
+    color: #a096b9;
+    border-collapse: collapse; /* Remove double borders */
+    padding: 1vw;
+    padding-left: 3vw;
+}
+#table-container tr{
+    border-bottom: 0.1vw solid #332f3d;
+    height: 3vw;
+}
+#table-container tr:last-child{
+    border-bottom: none;
+    height: 3vw;
+}
+#table-container table tbody, #table-container table thead{
+    width: 90%;
+    display: block;
+    padding: 0 5%;
+}
 
+
+#table-container table td, #table-container table th{
+    border-right: 1vw solid transparent ;
+
+}
+
+#table-container table tbody > tr:first-child{
+    font-weight: bold;
+}
+
+.center-text{
+    text-align: center;
+}
 
