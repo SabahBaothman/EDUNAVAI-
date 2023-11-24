@@ -29,7 +29,7 @@ include('../includes/links.php');
         <form id="roadmap-form" class="roadmap-form">
             <div class="card-brands careers-card form-section" id="form-section-1">
                 <div class="section-head">
-                    <img class="form-head-img" src="../media/images/form-profile.png">
+                    <img class="form-head-img" src="../media/images/profile.png">
                     <h4>STEP#1</h4>
                     <span class="h-line">
                         <hr>
@@ -71,7 +71,7 @@ include('../includes/links.php');
             </div>
             <div class="card-brands careers-card form-section" id="form-section-2">
             <div class="section-head">
-                    <img class="form-head-img" src="../media/images/form-profile.png">
+                    <img class="form-head-img" src="../media/images/skill.png">
                     <h4>STEP#2</h4>
                     <span class="h-line">
                         <hr>
@@ -96,7 +96,7 @@ include('../includes/links.php');
             </div>
             <div class="card-brands careers-card form-section" id="form-section-3">
             <div class="section-head">
-                    <img class="form-head-img" src="../media/images/form-profile.png">
+                    <img class="form-head-img" src="../media/images/experience.png">
                     <h4>STEP#3</h4>
                     <span class="h-line">
                         <hr>
@@ -118,7 +118,7 @@ include('../includes/links.php');
 
             <div class="card-brands careers-card form-section" id="form-section-4">
             <div class="section-head">
-                    <img class="form-head-img" src="../media/images/form-profile.png">
+                    <img class="form-head-img" src="../media/images/privacy.png">
                     <h4>STEP#4</h4>
                     <span class="h-line">
                         <hr>
