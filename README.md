@@ -1,9 +1,7 @@
 # EDUNAVAI
 - [ ] Front End:
   - [x] Landing Page.
-    - [ ] Fix typo in gif.
-    - [ ] Smooth transition when clicking the arrows.
-  - [ ] Roadmap Generator.
+  - [x] Roadmap Generator.
   - [ ] Roadmap.
   - [ ] About Us.
   - [ ] Support.
