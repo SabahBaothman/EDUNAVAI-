@@ -13,7 +13,7 @@
   - [x] Feedback.
   - [x] Contact. > Wait for Dr. Samar's response to apply modifications.
   - [x] Image Gallery. > Maybe we can modify the style.
-  - [ ] Footer.
+  - [x] Footer.
 - [ ] Backend:
   - [x] Email. > Wait for Dr. Samar's response to apply modifications.
   - [x] Form Validation.
