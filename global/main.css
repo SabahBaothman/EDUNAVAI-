@@ -1560,3 +1560,52 @@ background-color: var(--black-purple);
 
 }
 
+/* foteer  */
+
+footer {
+    background-color: var(--black);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+footer h2 {
+    letter-spacing: 2px; /* Add space between each letter */
+    color: white;
+    margin-bottom: -5px;
+}
+
+footer h5 {
+    color: white;
+    font-weight: lighter; /* Use a lighter font-weight */
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the links horizontally */
+    margin-left: -50px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: white; /* Set link color to white */
+    margin: 0 10px; /* Add space on both sides of each link */
+}
+
+footer hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: -10px;
+
+}
+
+
+
