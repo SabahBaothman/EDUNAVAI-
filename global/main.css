@@ -184,8 +184,7 @@ nav.span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    margin-top: 30px;
+    padding: 100px 100px 30px;
 }
 
 
@@ -195,18 +194,18 @@ nav.span {
     margin: 25px;
 }
 
+.right-half img{
+width: 85%;
+margin-left: -30px;
+}
+
 
 .about-section h1 {
-    font-size: 4em;
+    font-size: 3vw;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 900;
     color: white;
 }
-
-.about-section h1 span {
-    color: white;
-}
-
 
 .about-section h1 span:last-child {
     background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
@@ -218,8 +217,7 @@ nav.span {
 }
 
 .about-section h5 {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /* Add margin to the bottom for spacing */
     color: white;
     font-weight: normal;
@@ -257,32 +255,28 @@ nav.span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40vh;
-    /* Adjust the height based on your needs */
     text-align: center;
 }
 
 #vision-section h4 {
     color: white;
-    margin-bottom: 20px;
     font-weight: normal;
     text-transform: uppercase;
+    margin-top: -30px;
 }
 
 #vision-section h2 {
-    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
     -webkit-background-clip: text;
     /* Clip the background to the text */
+    background-clip: text;
     color: transparent;
-    margin: 0;
     padding: 20px;
     font-size: 1.8em;
+    margin-top: -10px;
 }
 
-
-
-/* Add this to your existing CSS file */
-
+/* services-section */
 .services-section {
     text-align: left;
     display: flex;
@@ -293,22 +287,23 @@ nav.span {
 }
 
 .services-section h1 {
-    font-size: 45px;
+    font-size: 3vw;
     margin-bottom: 20px;
-}
-
-.services-section .Our {
     color: white;
+    margin-top: -30px;
+
 }
 
 .services-section .Services {
-    background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+    background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
     -webkit-background-clip: text;
+    /* Clip the background to the text */
+    background-clip: text;
     color: transparent;
+    /* Set text color to transparent */
 }
 
 .services-section h4 {
-    margin-top: 10px;
     margin-bottom: 20px;
     color: white;
     font-weight: normal;
@@ -332,9 +327,9 @@ nav.span {
 }
 
 .service-box {
-    width: 300px;
+    width: 250px;
     /* Set the desired width */
-    height: 300px;
+    height: 250px;
     /* Set the desired height */
     border-radius: 50px;
     padding: 20px;
@@ -347,8 +342,8 @@ nav.span {
 }
 
 .icon-box {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border: 2px solid transparent;
     /* Set a transparent border to preserve space for the border */
     border-radius: 30px;
@@ -356,8 +351,8 @@ nav.span {
     /* Ensure the gradient border is contained within the box */
     position: relative;
     margin-bottom: 10px;
-    margin-top: 30px;
-    margin-left: 100px;
+    margin-top: 10px;
+    margin-left: 80px;
 }
 
 .icon-box::before {
@@ -376,7 +371,8 @@ nav.span {
 }
 
 .icon-box i {
-    font-size: 24px;
+    margin-top: 20px;
+    font-size: 35px;
     color: white;
     z-index: 1;
     /* Place the content above the pseudo-element */
@@ -385,11 +381,10 @@ nav.span {
 .service-box p {
     color: white;
     margin: 20px;
+    font-size: 13px;
 }
 
 /* --- team-section ---*/
-
-/* styles.css */
 
 .team-section {
     padding: 20px;
@@ -404,8 +399,8 @@ nav.span {
 }
 
 .team-section h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: 3vw;
+    margin-bottom: 10px;
     color: white;
     /* Set text color to white */
 }
@@ -421,9 +416,10 @@ nav.span {
 }
 
 .team-section h4 {
+    margin-top: 50px;
     color: white;
-    margin-bottom: 20px;
     font-weight: normal;
+    margin-bottom: -20px;
     text-transform: uppercase;
 }
 
@@ -437,16 +433,15 @@ nav.span {
     /* Allow boxes to wrap to the next line */
     margin-top: 50px;
     /* Add margin at the top if needed */
-    margin-left: 20px;
 }
 
 .team-card {
-    width: 500px;
+    width: 400px;
     /* Set the desired width */
-    height: 200px;
+    height: 150px;
     /* Set the desired height width */
-    border-radius: 50px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 40px;
     /* Add padding for space inside the boxes */
     text-align: left;
     /* Align text to the left */
@@ -458,9 +453,12 @@ nav.span {
 }
 
 .team-card img {
-    max-width: 100%;
-    border-radius: 50%;
-    margin-right: 20px;
+ width:60%;   
+ height: 235px;
+ border-radius: 20px;
+ margin-top: -42px;
+ margin-right: 20px;
+ margin-left: -40px;
     /* Add margin to separate the image from the text */
 
 }
@@ -469,15 +467,13 @@ nav.span {
     flex: 1;
     /* Allow the info to take the remaining space */
     text-align: center;
-    margin-top: 15px;
-    margin-left: 50px;
 }
 
 .team-info h4 {
     color: white;
-    margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .social-icons a {
