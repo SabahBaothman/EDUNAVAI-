@@ -24,7 +24,7 @@ include('../includes/links.php');
         </div>
         <div class="right-half">
             <!-- Your image goes here -->
-            <img src="your-image.jpg" alt="About Us Image">
+            <img src="../media/About.png" alt="About Us Image">
         </div>
     </div>
 
@@ -33,21 +33,7 @@ include('../includes/links.php');
         <h4>Our Vision</h4>
         <h2>We envision a world where individuals confidently  </br> navigate unique learning journeys. Our mission </br> is to revolutionize education by providing personalized</br>  guidance, empowering learners  to unlock their </br> potential and achieve success.</h2>
     </div>
-
-    <!-- Section 3: Watch the Video -->
-    <div class="section watch-video-section">
-        <div class="left-half">
-            <!-- Your image goes here -->
-            <img src="your-image.jpg" alt="Watch Video Image">
-        </div>
-        <div class="right-half">
-        <h1><span class="Know">Know</span> <span class="More">More</span></h1>
-            <h4>Watch our video to see how EduNavAi transforms education, guiding individuals through unique  </br> learning journeys and revolutionizing learning.</h4>
-            <button onclick="window.location.href='video.php'">Watch Video</button>
-        </div>
-    </div>
-
-    <!-- Section 4: Our Services -->
+    
 <!-- Section 4: Our Services -->
 <div class="section services-section">
     <h1><span class="Our">Our</span> <span class="Services">Services</span></h1>
@@ -57,25 +43,26 @@ include('../includes/links.php');
         <div class="service-box">
             <div class="icon-box">
                 <!-- Add your icon here -->
-                <i class="fa fa-icon"></i>
-            </div>
-            <p>Service 1</p>
+                <i class="fa-solid fa-robot"></i>
+                        </div>
+            <h4>EduNavAi uses AI for dynamic suggestions that evolve with user preferences.</h4>
         </div>
 
         <div class="service-box">
             <div class="icon-box">
                 <!-- Add your icon here -->
-                <i class="fa fa-icon"></i>
-            </div>
-            <p>Service 2</p>
+
+                <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <h4>EduNavAi tailors unique learning paths using advanced algorithms.</h4>
         </div>
 
         <div class="service-box">
             <div class="icon-box">
                 <!-- Add your icon here -->
-                <i class="fa fa-icon"></i>
-            </div>
-            <p>Service 3</p>
+                <i class="fa-solid fa-bullseye"></i>
+                                    </div>
+            <h4>EduNavAi conducts thorough skill assessments to identify strengths and areas for improvement. </h4>
         </div>
     </div>
 </div>
@@ -89,7 +76,7 @@ include('../includes/links.php');
     <div class="team-cards">
     <!-- Team Member 1 -->
     <div class="team-card">
-        <img src="team_member1.jpg" alt="Team Member 1">
+    <img src="../media/avatar1.png" alt="Team Member 1">
         <div class="team-info">
             <h4>SABAH BAOTHMAN</h4>
             <div class="social-icons">
@@ -101,7 +88,7 @@ include('../includes/links.php');
 
     <!-- Team Member 2 -->
     <div class="team-card">
-        <img src="team_member2.jpg" alt="Team Member 2">
+    <img src="../media/avatar1.png" alt="Team Member 1">
         <div class="team-info">
             <h4>RIMA ALGHAMDI</h4>
             <div class="social-icons">
