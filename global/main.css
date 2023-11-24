@@ -1048,6 +1048,7 @@ nav.span {
 /* Hide the default arrow */
 
 
+
 /*  feedback form */ 
 
 .feedback-section {
@@ -1063,16 +1064,16 @@ nav.span {
     padding: 0; /* Remove any default padding */
     margin-left: 150px;
     margin-right:150px ;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 }
 
 .feedback-section fieldset legend {
     margin-left: 20px; /* Set margin-left for the legend */
     color: white; /* Set text color to white */
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 30px;
 
 }
 
@@ -1112,7 +1113,7 @@ nav.span {
     display: flex;
     flex-direction: row;
     align-items: flex-start; /* Align items at the start of the container */
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-left: -60px;
 }
 
@@ -1199,7 +1200,7 @@ nav.span {
     margin-right: 20px;
     color: white;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .feedback-details label.radio-label::before {
@@ -1223,7 +1224,7 @@ nav.span {
     margin-top: 30px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #2f2f2f;
     border-radius: 30px;
@@ -1235,7 +1236,7 @@ nav.span {
 
 .feedback-details input[type="checkbox"] {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-left: 15px;
     margin-right: 10px;
   }
@@ -1269,7 +1270,7 @@ nav.span {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px var(--darkPurple); /* Neon light effect */
     cursor: pointer;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 16px; /* Adjust the font size as needed */
     background-color: var(--darkPurple);
   
