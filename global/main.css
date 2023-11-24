@@ -1292,6 +1292,7 @@ nav.span {
 }
 
 
+
 /* RoadMap Form Starts */
 
 #form-container {
@@ -1309,13 +1310,15 @@ nav.span {
     padding-left: 0.4vw;
 }
 #form-container *{
-margin-left: 1vw;
 
 }
 .section-head{
     display: flex;
     height: 4vw;
     margin-bottom: 2vw;
+}
+.section-head *{
+    margin-left: 1vw;
 }
 #form-container .form-head-img {
     height: 4vw;
@@ -1355,7 +1358,8 @@ font-size: 1vw;
 
 
 
-#form-container input,
+#form-container input[type="text"] ,
+#form-container input[type="number"] ,
 #form-container select {
     display: block;
     width: 90%;
@@ -1384,8 +1388,8 @@ background-color: var(--black-purple);
 
 #form-container .form-section {
     width: 50%;
-    margin: 5vw auto;
-    padding: 2vw 2vw;
+    margin: 2vw auto 0 auto;
+    padding: 2vw 2vw 4vw 2vw;
 }
 
 #form-container input[type="checkbox"] {
@@ -1465,62 +1469,11 @@ background-color: var(--black-purple);
     /* Adjust the font size as needed */
 }
 
-#roadmap-form{
+
+#scroll-here-1{
+    margin-top: 8vw;
+    height: 2vw;
 }
-#scroll-here{
-    margin-top: 16vw;
-
-    height: 1vw;
-}
-
-/* foteer  */
-
-footer {
-    background-color: var(--black);
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 30px;
-}
-
-footer h2 {
-    letter-spacing: 2px; /* Add space between each letter */
-    color: white;
-    margin-bottom: -5px;
-}
-
-footer h5 {
-    color: white;
-    font-weight: lighter; /* Use a lighter font-weight */
-}
-
-footer nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Center the links horizontally */
-    margin-left: -50px;
-}
-
-footer nav a {
-    text-decoration: none;
-    color: white; /* Set link color to white */
-    margin: 0 10px; /* Add space on both sides of each link */
-}
-
-footer hr {
-    margin: 20px 0;
-    border: 0;
-    border-top: 1px solid #ddd;
-}
-
-footer p {
-    color: #888;
-    font-size: 13px;
-    margin-bottom: -10px;
-
-}
-
-
 
 /* TABLE PAGE */
 #table-container{
@@ -1565,5 +1518,49 @@ footer p {
 
 .center-text{
     text-align: center;
+}
+
+#next, #generate-button {
+    background-color: var(--darkPurple);
+    color: white;
+    border: none;
+    display: block;
+    padding: 18px 35px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px var(--darkPurple);
+    /* Neon light effect */
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 3;
+    position: revert-layer;
+    margin: 0vw auto;
+    /* Adjust the font size as needed */
+}
+#next:hover, #generate-button:hover, #start-roadmap:hover {
+    background-color: #211e29;
+    box-shadow: 0 0 20px rgba(173, 216, 230, 1), 0 0 40px rgba(173, 216, 230, 1);
+    /* Adjust the color and spread as needed */
+}
+
+#scroll-here-2{
+    height: 1vw;
+}
+#scroll-here-3{
+    height: 2vw;
+}
+#scroll-here-4{
+    height: 12vw;
+}
+.full-width  {
+    margin: -1vw auto 5vw auto;
+    width: 100%;
+    padding: auto 49%;
+
+}
+
+#generate-button {
+    z-index: 3;
+    position: relative;
+
 }
 
