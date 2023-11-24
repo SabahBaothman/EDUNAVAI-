@@ -765,13 +765,15 @@ nav.span {
 
 #main-page-conrtainer h1,
 #contant-page-container h1,
-#form-container h1{
+#form-container h1,
+#table-container h1{
     text-align: center;
     font-size: 3vw;
     font-weight: 900;
     color: white;
     margin: 0 !important;
 }
+
 
 #main-page-conrtainer p,
 #contant-page-container p {
