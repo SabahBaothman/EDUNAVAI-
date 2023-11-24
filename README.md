@@ -3,8 +3,8 @@
   - [x] Landing Page.
   - [x] Roadmap Generator.
   - [ ] Roadmap.
-  - [ ] About Us.
-  - [ ] Support.
+  - [x] About Us.
+  - [ ] ~~support.~~
   - [x] Video.
   - [ ] Table.
   - [x] Resumes.
