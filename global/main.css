@@ -22,7 +22,6 @@ html {
     background-color: var(--black-lighter) !important;
 }
 
-
 /* NABAR */
 /*----------------------------------------------*/
 nav {
@@ -72,6 +71,7 @@ nav.span {
 #nav-logo-holder {
     margin: auto 0 auto 0;
 }
+
 
 
 /* GALLERY */
@@ -784,7 +784,8 @@ margin-left: -30px;
 }
 
 #main-page-conrtainer h1 span,
-#contant-page-container h1 span {
+#contant-page-container h1 span,
+#roadmap-container h1 span {
     background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
     -webkit-background-clip: text;
     /* Clip the background to the text */
@@ -1612,3 +1613,49 @@ footer p {
 
 
 
+
+
+
+/* ROADMAP */
+.card-week {
+    width: 50%;
+    margin: 1vw auto;
+    background-color: #211e29;
+    border: 1px solid #332f3d;
+    border-radius: .75rem;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    color:#d5d3db;  
+  }
+.card-week:first {
+    margin-top: 4vw;
+
+  }
+
+
+  #roadmap-container h1{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 4vw;
+}
+
+.card-week p{
+margin-left: 1vw;
+  }
+
+
+  #roadmap-container .form-head-img {
+    height: 4vw;
+    float: left;
+    display: inline;
+}
+#roadmap-container .h-line{
+    width: 70%;
+    margin: auto 0vw;
+
+}
