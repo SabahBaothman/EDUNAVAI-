@@ -38,11 +38,11 @@ include('../includes/links.php');
                 <h3>Personal Profile</h3>
                 <label for="nameInput">
                     <p>Your Name</p>
-                    <input type="text" placeholder="Name" name="nameInput" id="nameInput" />
+                    <input type="text" placeholder="Name" name="nameInput" id="nameInput" required/>
                 </label>
                 <label for="ageInput">
                     <p>Age Group</p>
-                    <select name="ageInput" id="ageInput">
+                    <select name="ageInput" id="ageInput" required>
                         <option selected value="default">Select AgeGroup</option>
                         <option value="15-18">15-18</option>
                         <option value="19-25">19-25</option>
@@ -52,7 +52,7 @@ include('../includes/links.php');
                 </label>
                 <label for="educationaBackgroundInput">
                     <p>Educational Background</p>
-                    <select name="educationaBackgroundInput" id="educationaBackgroundInput">
+                    <select name="educationaBackgroundInput" id="educationaBackgroundInput" required>
                         <option selected value="default">Select Educational Background</option>
                         <option value="science_engineering">Science and Engineering</option>
                         <option value="arts_humanities">Arts and Humanities</option>
@@ -85,7 +85,7 @@ include('../includes/links.php');
                         <h3>Learning Goals</h3>
                         <label for="goalInput">
                             <p>Primary Learning Goal or Objective</p>
-                            <input type="text" name="goalInput" id="goalInput" placeholder="e.g., Web Development" />
+                            <input type="text" name="goalInput" id="goalInput" placeholder="e.g., Web Development" required/>
                         </label>
 
                         <label for="skillsInput">
@@ -115,7 +115,7 @@ include('../includes/links.php');
 
                         <label for="levelInput">
                             <p>Experience in the Field</p>
-                            <select name="levelInput" id="levelInput">
+                            <select name="levelInput" id="levelInput" required> 
                                 <option selected value="default">Select a level</option>
                                 <option value="beginner">Beginner</option>
                                 <option value="intermediate">Intermediate</option>
@@ -145,7 +145,7 @@ include('../includes/links.php');
                         </label>
 
                         <div id="agreement-holdre">
-                            <input type="checkbox" id="termsInput" name="termsInput" value="accepted">
+                            <input type="checkbox" id="termsInput" name="termsInput" value="accepted" required>
                             <label id="agree" for="termsInput">I agree</label>
                         </div>
 
@@ -157,7 +157,6 @@ include('../includes/links.php');
     </div>
 
     <script src="../js/GenerateRoadmapAPI.js">
-
     </script>
     <!-- Include the footer file  -->
     <?php
