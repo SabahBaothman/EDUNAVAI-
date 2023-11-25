@@ -11,7 +11,7 @@
 const weeks = [];
 
 async function generateGPTResponse(prompt) {
-  const apiKey = "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";
+  const apiKey = "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";
   const apiUrl = "https://api.openai.com/v1/completions";
   const headers = {
     "Content-Type": "application/json",
@@ -58,7 +58,11 @@ form.addEventListener("submit", async function (event) {
 
   // Get the form values and generate the GPT response
   const formValues = getFormValues(form);
-  const prompt = `generate a roadmap to learn ${formValues.goalInput}, specific skills are: ${formValues.skillsInput}, the learning duration is ${formValues.durationInput} weeks`;
+  const prompt = `generate a roadmap to learn ${formValues.goalInput} 
+  for someone in the age group of  ${formValues.ageInput}, 
+  the level is: ${formValues.levelInput}, 
+  specific skills are: ${formValues.skillsInput}, 
+  the learning duration is ${formValues.durationInput} weeks`;
 
   try {
     const response = await generateGPTResponse(prompt);
@@ -83,6 +87,13 @@ form.addEventListener("submit", async function (event) {
 
     // Store the weeks data in sessionStorage
     sessionStorage.setItem("name", formValues.nameInput);
+    sessionStorage.setItem("age", formValues.ageInput);
+    sessionStorage.setItem("goal", formValues.goalInput);
+    sessionStorage.setItem("skill", formValues.skillsInput);
+    sessionStorage.setItem("level", formValues.levelInput);
+    sessionStorage.setItem("duration", formValues.durationInput);
+
+
     sessionStorage.setItem("weeksData", JSON.stringify(weeks));
     window.open("../pages/Roadmap.php", "_self");
   } catch (error) {
@@ -107,6 +118,7 @@ function getFormValues(form) {
 }
 
 function scrollToSection(sectionId) {
+  event.preventDefault();
   document.getElementById(sectionId).scrollIntoView({
     behavior: "smooth",
   });
