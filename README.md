@@ -26,11 +26,11 @@
   - [x] Picture Galley. > Maybe we can modify the style.
   - [x] Roadmap form.
   - [x] Roadmap Generation + Results.
-    - [ ] Use other information in the prompt.
-    - [ ] Verify accepting the conditions.
-    - [ ] Decide which fields are mandatory and implement the verification for them.
+    - [x] Use other information in the prompt.
+    - [ ] Verify accepting the conditions. >> is required enough?
+    - [x] Decide which fields are mandatory and implement the verification for them.
     - [ ] Add export (print maybe) button.
-    - [ ] Display Inputs such as: age, skils etc for the roadmap generated.
+    - [x] Display Inputs such as: age, skils etc for the roadmap generated.
 - [ ] DB:
   - [x] Send Contact Message.
   - [x] Send Feedback.
