@@ -22,12 +22,14 @@ html {
     background-color: var(--black-lighter) !important;
 }
 
+
 /* NABAR */
 /*----------------------------------------------*/
 nav {
-    padding: 1.2vw 0vw 1.2vw 5vw;
+    /* padding: 1.2vw 0vw 1.2vw 5vw; */
     display: inline-flex;
-    width: 96vw;
+    width: 80%;
+    margin: 2vw 10%;
     /*  background-color: var(--bg-200);*/
     /* margin: 2vw 1vw 0vw 1vw; */
     /* border-radius: 3vw; */
@@ -60,15 +62,16 @@ nav.span {
 }
 
 #nav-title-holder {
-    margin: auto auto auto 2vw;
+    margin: auto auto auto 0.2vw;
     color: #f2f2f2;
+    font-weight: 100;
+    font-size: 1vw;
 
 }
 
 #nav-logo-holder {
     margin: auto 0 auto 0;
 }
-
 
 
 /* GALLERY */
