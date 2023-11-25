@@ -20,5 +20,5 @@
   - [ ] Roadmap Generation + Results.
 - [ ] DB:
   - [x] Send Contact Message.
-  - [ ] Send Feedback.
+  - [x] Send Feedback.
   - [ ] ??
