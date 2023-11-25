@@ -1,17 +1,25 @@
 # EDUNAVAI
 - [ ] Front End:
   - [x] Landing Page.
+    - [ ] Modify gif typo.
   - [x] Roadmap Generator.
   - [x] Roadmap.
   - [x] About Us.
+    - [ ] Modify alignment - vision images.
+    - [ ] Resumes in the same page.
   - [ ] ~~support.~~
   - [x] Video.
   - [x] Table.
   - [x] Resumes.
   - [x] Feedback.
+    - [ ] Modify input tags style.
   - [x] Contact. > Wait for Dr. Samar's response to apply modifications.
+    - [ ] Add Email.
   - [x] Image Gallery. > Maybe we can modify the style.
+    - [ ] Change Images.
+    - [ ] Consider restyling it.
   - [x] Footer.
+    - [ ] Roadmap page/footer fix.
 - [x] Backend:
   - [x] Email. > Wait for Dr. Samar's response to apply modifications.
   - [x] Form Validation.
