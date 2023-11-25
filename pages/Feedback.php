@@ -18,7 +18,7 @@ include('../includes/header.php');
         <h4>Give Us</h4>
         <h1><span class="A">A</span> <span class="Feedback">Feedback</span></h1>
 
-        <form action="#" method="post" id="form">
+            <form action="../db/validation.php" method="post" id="form">
             <div class="personal-information">
                 <fieldset>
                     <legend>Personal Information</legend>
