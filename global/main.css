@@ -197,9 +197,9 @@ nav.span {
     margin: 25px;
 }
 
-.right-half img{
-width: 85%;
-margin-left: -30px;
+.right-half img {
+    width: 85%;
+    margin-left: -30px;
 }
 
 
@@ -456,12 +456,12 @@ margin-left: -30px;
 }
 
 .team-card img {
- width:60%;   
- height: 235px;
- border-radius: 20px;
- margin-top: -42px;
- margin-right: 20px;
- margin-left: -40px;
+    width: 60%;
+    height: 235px;
+    border-radius: 20px;
+    margin-top: -42px;
+    margin-right: 20px;
+    margin-left: -40px;
     /* Add margin to separate the image from the text */
 
 }
@@ -765,7 +765,7 @@ margin-left: -30px;
 #main-page-conrtainer h1,
 #contant-page-container h1,
 #form-container h1,
-#table-container h1{
+#table-container h1 {
     text-align: center;
     font-size: 3vw;
     font-weight: 900;
@@ -1013,13 +1013,13 @@ margin-left: -30px;
     color: white;
 }
 
- /* Disable default resizing behavior */
+/* Disable default resizing behavior */
 #contant-page-container form .row select {
     width: 103%;
     padding-right: 20px;
     border-right: 16px solid transparent;
-      
-      
+
+
 }
 
 #contant-page-container .row {
@@ -1049,31 +1049,38 @@ margin-left: -30px;
     background-color: var(--matte);
     /* Adjust the color and spread as needed */
 }
+
 /* Hide the default arrow */
 
 
 
-/*  feedback form */ 
+/*  feedback form */
 
 .feedback-section {
     text-align: center;
     padding: 20px;
-    border-radius: 10px; /* Set border radius for the form */
+    border-radius: 10px;
+    /* Set border radius for the form */
     margin-top: 6vw;
 }
 
 .feedback-section fieldset {
-    border: none; /* Remove the border */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
+    border: none;
+    /* Remove the border */
+    margin: 0;
+    /* Remove any default margin */
+    padding: 0;
+    /* Remove any default padding */
     margin-left: 150px;
-    margin-right:150px ;
+    margin-right: 150px;
     margin-bottom: 5px;
 }
 
 .feedback-section fieldset legend {
-    margin-left: 20px; /* Set margin-left for the legend */
-    color: white; /* Set text color to white */
+    margin-left: 20px;
+    /* Set margin-left for the legend */
+    color: white;
+    /* Set text color to white */
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: bold;
@@ -1081,21 +1088,24 @@ margin-left: -30px;
 
 }
 
-.feedback-section h1{
+.feedback-section h1 {
     font-size: 3vw;
-    color: white; /* Set text color to white */
+    color: white;
+    /* Set text color to white */
     text-align: center;
     margin-bottom: 50px;
     font-weight: 900;
 
 }
+
 .feedback-section .A {
     background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
     -webkit-background-clip: text;
     /* Clip the background to the text */
     background-clip: text;
     color: transparent;
-    /* Set text color to transparent */}
+    /* Set text color to transparent */
+}
 
 .feedback-section .Feedback {
     background-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
@@ -1103,7 +1113,8 @@ margin-left: -30px;
     /* Clip the background to the text */
     background-clip: text;
     color: transparent;
-    /* Set text color to transparent */}
+    /* Set text color to transparent */
+}
 
 .feedback-section h4 {
     color: white;
@@ -1116,7 +1127,8 @@ margin-left: -30px;
 .feedback-section .SectionThree {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Align items at the start of the container */
+    align-items: flex-start;
+    /* Align items at the start of the container */
     margin-bottom: 10px;
     margin-left: -60px;
 }
@@ -1129,7 +1141,8 @@ margin-left: -30px;
     color: white;
     margin-bottom: 5px;
     text-align: left;
-    margin-left: 90px; /* Adjust this value separately */
+    margin-left: 90px;
+    /* Adjust this value separately */
 
 }
 
@@ -1150,9 +1163,12 @@ margin-left: -30px;
     border: none;
     border-radius: 30px;
     background-color: #2f2f2f;
-    margin-top: 5px; /* Add margin between input boxes */
-    outline: none; /* Remove the blue outline on focus */
-    color: white; /* Set text color to white */
+    margin-top: 5px;
+    /* Add margin between input boxes */
+    outline: none;
+    /* Remove the blue outline on focus */
+    color: white;
+    /* Set text color to white */
 }
 
 .feedback-details .label {
@@ -1163,7 +1179,8 @@ margin-left: -30px;
     margin-left: -585px;
 
 }
-.feedback-details .label1{
+
+.feedback-details .label1 {
     width: 40%;
     box-sizing: border-box;
     color: white;
@@ -1172,7 +1189,7 @@ margin-left: -30px;
 
 }
 
-.feedback-details .label2{
+.feedback-details .label2 {
     width: 40%;
     box-sizing: border-box;
     color: white;
@@ -1180,7 +1197,7 @@ margin-left: -30px;
     margin-left: -710px;
 }
 
-.feedback-details .label3{
+.feedback-details .label3 {
     width: 40%;
     box-sizing: border-box;
     color: white;
@@ -1200,7 +1217,8 @@ margin-left: -30px;
     cursor: pointer;
     padding-left: 30px;
     display: inline-block;
-    line-height: 20px; /* Adjust as needed */
+    line-height: 20px;
+    /* Adjust as needed */
     margin-right: 20px;
     color: white;
     margin-top: 30px;
@@ -1212,15 +1230,18 @@ margin-left: -30px;
     position: absolute;
     left: 0;
     top: 0;
-    width: 15px; /* Adjust the size of the custom radio */
-    height: 15px; /* Adjust the size of the custom radio */
+    width: 15px;
+    /* Adjust the size of the custom radio */
+    height: 15px;
+    /* Adjust the size of the custom radio */
     border: 2px solid #2f2f2f;
     border-radius: 50%;
     background-color: white;
 }
 
-.feedback-details input[type="radio"]:checked + label.radio-label::before {
-    background-color: var(--lightBlue); /* Change to red when checked */
+.feedback-details input[type="radio"]:checked+label.radio-label::before {
+    background-color: var(--lightBlue);
+    /* Change to red when checked */
     border: none;
 }
 
@@ -1235,7 +1256,7 @@ margin-left: -30px;
     background-color: #2f2f2f;
     margin-left: 30px;
     color: white;
-    outline: none; 
+    outline: none;
 }
 
 .feedback-details input[type="checkbox"] {
@@ -1243,14 +1264,14 @@ margin-left: -30px;
     margin-bottom: 40px;
     margin-left: 15px;
     margin-right: 10px;
-  }
-  
-  .feedback-details .checkbox-label {
+}
+
+.feedback-details .checkbox-label {
     width: auto;
     box-sizing: border-box;
     color: white;
     margin-bottom: 5px;
-  }
+}
 
 #courseInterest {
     width: 25%;
@@ -1263,7 +1284,7 @@ margin-left: -30px;
     margin-left: 30px;
     color: white;
     outline: none;
-    
+
 }
 
 .feedback-section button {
@@ -1271,18 +1292,21 @@ margin-left: -30px;
     border: none;
     padding: 18px 35px;
     border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px var(--darkPurple); /* Neon light effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px var(--darkPurple);
+    /* Neon light effect */
     cursor: pointer;
     margin-top: 30px;
     margin-bottom: 25px;
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 16px;
+    /* Adjust the font size as needed */
     background-color: var(--darkPurple);
-  
+
 }
 
-.feedback-section button[type="submit"]  {
+.feedback-section button[type="submit"] {
     background-color: rgba(118, 61, 165, 0.945);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px var(--darkPurple); /* Neon light effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 20px var(--darkPurple);
+    /* Neon light effect */
 }
 
 .error {
@@ -1303,46 +1327,52 @@ margin-left: -30px;
     padding: 5vw 1vw;
     font-family: Open Sans, sans-serif;
 }
-#form-container p{
+
+#form-container p {
     color: white;
     font-weight: 200;
     margin-bottom: 0.4vw;
     padding-left: 0.4vw;
 }
-#form-container *{
 
-}
-.section-head{
+#form-container * {}
+
+.section-head {
     display: flex;
     height: 4vw;
     margin-bottom: 2vw;
 }
-.section-head *{
+
+.section-head * {
     margin-left: 1vw;
 }
+
 #form-container .form-head-img {
     height: 4vw;
     float: left;
     display: inline;
 }
-#form-container .h-line{
+
+#form-container .h-line {
     width: 70%;
     margin: auto 0vw;
 
 }
-hr{
+
+hr {
     background-image: linear-gradient(to right, var(--primary), var(--darkBlue));
     height: 0.1vw;
     border: none;
     margin: auto 0vw;
 }
+
 #form-container h4 {
     height: 0vw;
     margin-top: auto 0;
     color: white;
     display: inline;
     vertical-align: bottom;
-font-size: 1vw;
+    font-size: 1vw;
     font-weight: 100;
     font-family: Open Sans, sans-serif;
     letter-spacing: 0.1rem;
@@ -1358,8 +1388,8 @@ font-size: 1vw;
 
 
 
-#form-container input[type="text"] ,
-#form-container input[type="number"] ,
+#form-container input[type="text"],
+#form-container input[type="number"],
 #form-container select {
     display: block;
     width: 90%;
@@ -1367,7 +1397,7 @@ font-size: 1vw;
     border: none;
     border-radius: 1vw;
     outline: none;
-background-color: var(--black-purple);
+    background-color: var(--black-purple);
     margin: 0vw auto;
     -ms-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -1377,13 +1407,15 @@ background-color: var(--black-purple);
     border: 1vw solid transparent;
 
 }
-#form-container h3{
+
+#form-container h3 {
     color: var(--white);
     margin-left: 2vw;
-  font-family: Inter, sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;}
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
 
 
 #form-container .form-section {
@@ -1423,12 +1455,12 @@ background-color: var(--black-purple);
 }
 
 
-#form-container .blue-text{
+#form-container .blue-text {
     color: #7FB5EB;
 }
 
 
-#form-container > p{
+#form-container>p {
     font-family: 'Fira Code', monospace;
     margin-top: 2vw;
     width: 100%;
@@ -1451,10 +1483,10 @@ background-color: var(--black-purple);
     position: relative;
     overflow: hidden;
 
-  }
-  
+}
 
-  #start-roadmap {
+
+#start-roadmap {
     background-color: var(--darkPurple);
     color: white;
     border: none;
@@ -1470,16 +1502,17 @@ background-color: var(--black-purple);
 }
 
 
-#scroll-here-1{
+#scroll-here-1 {
     margin-top: 8vw;
     height: 2vw;
 }
 
 /* TABLE PAGE */
-#table-container{
+#table-container {
     margin-top: 3vw;
 }
-#table-container table{
+
+#table-container table {
     margin: 2vw auto 5vw auto;
     width: 50%;
     display: block;
@@ -1488,39 +1521,46 @@ background-color: var(--black-purple);
     border-radius: .75rem;
     align-items: center;
     color: #d7d0e9;
-    border-collapse: collapse; /* Remove double borders */
+    border-collapse: collapse;
+    /* Remove double borders */
     padding: 1vw;
     padding-left: 3vw;
 }
-#table-container tr{
+
+#table-container tr {
     border-bottom: 0.1vw solid #332f3d;
     height: 3vw;
 }
-#table-container tr:last-child{
+
+#table-container tr:last-child {
     border-bottom: none;
     height: 3vw;
 }
-#table-container table tbody, #table-container table thead{
+
+#table-container table tbody,
+#table-container table thead {
     width: 90%;
     display: block;
     padding: 0 5%;
 }
 
 
-#table-container table td, #table-container table th{
-    border-right: 1vw solid transparent ;
+#table-container table td,
+#table-container table th {
+    border-right: 1vw solid transparent;
 
 }
 
-#table-container table tbody > tr:first-child{
+#table-container table tbody>tr:first-child {
     font-weight: bold;
 }
 
-.center-text{
+.center-text {
     text-align: center;
 }
 
-#next, #generate-button {
+#next,
+#generate-button {
     background-color: var(--darkPurple);
     color: white;
     border: none;
@@ -1536,22 +1576,28 @@ background-color: var(--black-purple);
     margin: 0vw auto;
     /* Adjust the font size as needed */
 }
-#next:hover, #generate-button:hover, #start-roadmap:hover {
+
+#next:hover,
+#generate-button:hover,
+#start-roadmap:hover {
     background-color: #211e29;
     box-shadow: 0 0 20px rgba(173, 216, 230, 1), 0 0 40px rgba(173, 216, 230, 1);
     /* Adjust the color and spread as needed */
 }
 
-#scroll-here-2{
+#scroll-here-2 {
     height: 1vw;
 }
-#scroll-here-3{
+
+#scroll-here-3 {
     height: 2vw;
 }
-#scroll-here-4{
+
+#scroll-here-4 {
     height: 12vw;
 }
-.full-width  {
+
+.full-width {
     margin: -1vw auto 5vw auto;
     width: 100%;
     padding: auto 49%;
@@ -1575,27 +1621,32 @@ footer {
 }
 
 footer h2 {
-    letter-spacing: 2px; /* Add space between each letter */
+    letter-spacing: 2px;
+    /* Add space between each letter */
     color: white;
     margin-bottom: -5px;
 }
 
 footer h5 {
     color: white;
-    font-weight: lighter; /* Use a lighter font-weight */
+    font-weight: lighter;
+    /* Use a lighter font-weight */
 }
 
 footer nav {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Center the links horizontally */
+    justify-content: center;
+    /* Center the links horizontally */
     margin-left: -50px;
 }
 
 footer nav a {
     text-decoration: none;
-    color: white; /* Set link color to white */
-    margin: 0 10px; /* Add space on both sides of each link */
+    color: white;
+    /* Set link color to white */
+    margin: 0 10px;
+    /* Add space on both sides of each link */
 }
 
 footer hr {
@@ -1628,15 +1679,16 @@ footer p {
     padding: 28px;
     position: relative;
     overflow: hidden;
-    color:#d5d3db;  
-  }
+    color: #d5d3db;
+}
+
 .card-week:first {
     margin-top: 4vw;
 
-  }
+}
 
 
-  #roadmap-container h1{
+#roadmap-container h1 {
     text-align: center;
     font-size: 3vw;
     font-weight: 900;
@@ -1644,18 +1696,46 @@ footer p {
     margin-bottom: 4vw;
 }
 
-.card-week p{
-margin-left: 1vw;
-  }
+.card-week picture {
+    margin-left: 1vw;
+}
 
+.card-week p {
+    margin-left: 1vw;
+}
 
-  #roadmap-container .form-head-img {
+.card-week .info-h4 {
+    margin-left: 1vw;
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 0.1vw;
+    margin-bottom: 0.3vw;
+    width: 20%;
+}
+
+.card-week .info-p {
+    width: 20%;
+    display: inline-block;
+    margin-right: 30%;
+    margin-top: 0.1vw;
+    margin-bottom: 0.3vw;
+    margin-left: 0vw;
+
+    text-align: right;
+}
+
+#roadmap-container .form-head-img {
     height: 4vw;
     float: left;
     display: inline;
 }
-#roadmap-container .h-line{
+
+#roadmap-container .h-line {
     width: 70%;
     margin: auto 0vw;
 
+}
+
+.section-head-no-bottom-margin{
+    margin-bottom: 1vw;
 }
