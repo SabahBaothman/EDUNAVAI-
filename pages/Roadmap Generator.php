@@ -50,24 +50,7 @@ include('../includes/links.php');
                         <option value="30+">30+</option>
                     </select>
                 </label>
-                <label for="educationaBackgroundInput">
-                    <p>Educational Background</p>
-                    <select name="educationaBackgroundInput" id="educationaBackgroundInput" required>
-                        <option selected value="default">Select Educational Background</option>
-                        <option value="science_engineering">Science and Engineering</option>
-                        <option value="arts_humanities">Arts and Humanities</option>
-                        <option value="social_sciences">Social Sciences</option>
-                        <option value="business_management">Business and Management</option>
-                        <option value="health_medicine">Health and Medicine</option>
-                        <option value="law_legal_studies">Law and Legal Studies</option>
-                        <option value="education_teaching">Education and Teaching</option>
-                        <option value="information_technology">Information Technology</option>
-                        <option value="environmental_studies">Environmental Studies and Sustainability</option>
-                        <option value="agriculture_food_sciences">Agriculture and Food Sciences</option>
-                        <option value="architecture_design">Architecture and Design</option>
-                        <option value="communication_media_studies">Communication and Media Studies</option>
-                    </select>
-                </label>
+                
             </div>
             <div class="full-width">
                 <button id="next" onclick="scrollToSection('scroll-here-2')">Next</button>
