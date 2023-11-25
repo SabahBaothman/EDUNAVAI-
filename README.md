@@ -30,6 +30,7 @@
     - [ ] Verify accepting the conditions.
     - [ ] Decide which fields are mandatory and implement the verification for them.
     - [ ] Add export (print maybe) button.
+    - [ ] Display Inputs such as: age, skils etc for the roadmap generated.
 - [ ] DB:
   - [x] Send Contact Message.
   - [x] Send Feedback.
