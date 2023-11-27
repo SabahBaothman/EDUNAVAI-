@@ -859,6 +859,7 @@ nav.span {
 /*  Watch the Video  */
 
 .watch-video-section {
+    padding-top: 10vw;
     width: 60vw !important;
     display: flex;
     justify-content: space-between;
@@ -1584,9 +1585,11 @@ hr {
     box-shadow: 0 0 20px rgba(173, 216, 230, 1), 0 0 40px rgba(173, 216, 230, 1);
     /* Adjust the color and spread as needed */
 }
-
+#form-section-2{
+    margin-top: 5vw !important;
+}
 #scroll-here-2 {
-    height: 1vw;
+    height: 5vw;
 }
 
 #scroll-here-3 {
