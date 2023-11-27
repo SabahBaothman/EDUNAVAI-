@@ -42,17 +42,53 @@ window.addEventListener("load", () => {
     img.src = '../media/images/profile.png';
     //  Head - Week
     const h4 = document.createElement('h4');
-    h4.textContent = `Information`;
+    h4.textContent = `Roadmap Details`;
     //  Head - hr
     const span = document.createElement('span');
     span.classList.add('h-line');
     const hr = document.createElement('hr');
     span.appendChild(hr);
+
+
+    const btn = document.createElement('button');
+    btn.textContent = "Export";
+    btn.classList.add('print-btn');
+
+    btn.addEventListener('click', function() {
+      // Specify the element you want to capture
+      const elementToCapture = document.getElementById('roadmap-container');
+      const h1Element = document.querySelector('#roadmap-container h1');
+      h1Element.style.display = 'none';
+
+      // Use HTML2Canvas to capture the content
+      html2canvas(elementToCapture).then(function(canvas) {
+        // Convert the canvas to a data URL
+        const dataURL = canvas.toDataURL('image/png');
+    
+        // Create a link element to download the image
+        const downloadLink = document.createElement('a');
+        downloadLink.href = dataURL;
+        downloadLink.download = 'Roadmap.png';
+    
+        // Append the link to the document and trigger the download
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        h1Element.style.display = 'block';
+
+        // Clean up: remove the link element from the document
+        document.body.removeChild(downloadLink);
+
+      });
+
+    });
+
     // Append the elements to build the structure
     //  Append to Head
     sectionHeadDiv.appendChild(img);
     sectionHeadDiv.appendChild(h4);
     sectionHeadDiv.appendChild(span);
+    sectionHeadDiv.appendChild(btn);
+
     // Head - Append to Card
     infoDiv.appendChild(sectionHeadDiv);
     // Card - Append to container
@@ -128,12 +164,10 @@ window.addEventListener("load", () => {
     contentElement.textContent = duration+" weeks";
     infoDiv.appendChild(contentElement)
     roadmapContainer.appendChild(infoDiv);
-    // const name = sessionStorage.getItem("name");
-    // const age = sessionStorage.getItem("age");
-    // const goal = sessionStorage.getItem("goal");
-    // const skill = sessionStorage.getItem("skill");
-    // const level = sessionStorage.getItem("level");
-    // const duration = sessionStorage.getItem("duration");
+
+
+
+    
     
 
 
