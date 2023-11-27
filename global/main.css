@@ -1724,6 +1724,10 @@ footer p {
     text-align: right;
 }
 
+#roadmap-container{
+    padding: 5vw 0;
+    background-color: var(--black-lighter);
+}
 #roadmap-container .form-head-img {
     height: 4vw;
     float: left;
@@ -1731,11 +1735,52 @@ footer p {
 }
 
 #roadmap-container .h-line {
-    width: 70%;
+    width: 50%;
     margin: auto 0vw;
 
 }
 
 .section-head-no-bottom-margin{
     margin-bottom: 1vw;
+}
+
+.print-btn{
+   display: inline; 
+   width: 17%;
+   height: 4vw;
+   border-radius: 2vw;
+   background-color: rgba(118, 61, 165, 0.945);
+   background: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
+   border:none !important;
+   color:#332f3d;
+   font-size: 1vw;
+   font-weight: bold;
+   transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.print-btn:hover{
+    background-color: rgba(118, 61, 165, 0.945);
+    background: linear-gradient(to right, rgba(118, 61, 165, 0.945),rgba(118, 61, 165, 0.945));
+
+    color:var(--lightBlue);
+    box-shadow: 0 0 10px rgba(118, 61, 165, 0.945), 0 0 20px #211e29;
+ }
+ 
+
+ @media print {
+    footer{
+        display: none !important;
+    }
+    nav{
+        display: none !important;
+    }
+    .roadmap-container{
+        display: block;
+    }
+    @page {
+        margin: 1cm;
+      } body {
+        margin: 0;
+        padding: 0;
+        font-size: 10pt; /* Adjust font size for print if needed */
+      }
 }
