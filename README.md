@@ -29,7 +29,7 @@
     - [x] Use other information in the prompt.
     - [ ] Verify accepting the conditions. >> is required enough?
     - [x] Decide which fields are mandatory and implement the verification for them.
-    - [ ] Add export (print maybe) button.
+    - [x] Add export (print maybe) button (Done as PNG)
     - [x] Display Inputs such as: age, skils etc for the roadmap generated.
 - [ ] DB:
   - [x] Send Contact Message.
