@@ -20,6 +20,7 @@
     - [ ] Consider restyling it.
   - [x] Footer.
     - [ ] Roadmap page/footer fix.
+  - [x] Dashboard
 - [x] Backend:
   - [x] Email. > Wait for Dr. Samar's response to apply modifications.
   - [x] Form Validation.
@@ -34,4 +35,5 @@
 - [ ] DB:
   - [x] Send Contact Message.
   - [x] Send Feedback.
-  - [ ] ??
+  - [x] fetch_data
+  - [ ] setup the database in web hosting
