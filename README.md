@@ -9,6 +9,7 @@
     - [ ] Resumes in the same page.
   - [ ] ~~support.~~
   - [x] Video.
+    - [ ] Record video. 
   - [x] Table.
   - [x] Resumes.
   - [x] Feedback.
