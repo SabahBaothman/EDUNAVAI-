@@ -54,7 +54,7 @@ include('../includes/links.php');
             </div>
             <div class="full-width">
                 <button id="next" onclick="scrollToSection('form-section-2')">Next</button>
-                <div>
+            </div>
                     <div id="scroll-here-2">
                     </div>
                     <div class="card-brands careers-card form-section" id="form-section-2">
