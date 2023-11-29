@@ -116,7 +116,7 @@ if (!empty($data['feedbackData'])) {
     echo '    </div>';
     echo '</div>';
 
-    echo '<div class="feedback-section">';
+    echo '<div class="feedback-sectionn">';
     echo "<h2>Feedback Table</h2>";
     echo "<table>
             <tr>
