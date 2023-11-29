@@ -3,6 +3,8 @@
     $pageTitle = "EduNavAi";
     include('../includes/header.php');
     include "../db/connection.php";
+
+
 ?>
 <body>
     <!-- Set the page title and current page for navigation, then include the navigation links file -->
@@ -55,7 +57,7 @@
                     </textarea>
                 </label>
             </div>
-            <input  type="submit" id="sendMsssage" name="sendMsssage" value="Send Message"  onclick=" submit()"/>
+            <input  type="submit" id="sendMsssage" name="sendMsssage" value="Send Message" />
 
         </form>
 
