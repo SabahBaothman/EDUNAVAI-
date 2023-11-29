@@ -5,20 +5,16 @@ $host = "localhost";
 $user = "root";
 $password = "";
 $dbName = "web";
+$con = new mysqli($host, $user, $password, $dbName);
 
 
-// ptau ugws yodq moix 
-//These must be at the top of your script, not inside a function
+
 use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
-//Load Composer's autoloader
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
 
-$con = new mysqli($host, $user, $password, $dbName);
 
 if (
     isset($_POST['name']) && !empty($_POST['name']) &&
@@ -40,11 +36,8 @@ if (
     $body .= "Email: " . $mail . "\n\n";
     $body .= "Message: " . $message . "\n";
 
-    //Create an instance; passing `true` enables exceptions
     $phpMailer = new PHPMailer(true);
     try {
-        //Server settings
-        // $phpMailer->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $phpMailer->isSMTP();                                            //Send using SMTP
         $phpMailer->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $phpMailer->SMTPAuth = true;                                   //Enable SMTP authentication
@@ -53,17 +46,23 @@ if (
         $phpMailer->SMTPSecure = 'ssl';          //Enable implicit TLS encryption
         $phpMailer->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-        //Recipients
         $phpMailer->setFrom($to);
         $phpMailer->addAddress($mail, $name);     //Add a recipient
 
-        //Content
         $phpMailer->isHTML(true);                                  //Set email format to HTML
         $phpMailer->Subject = $subject;
         $phpMailer->Body = $body;
 
         $phpMailer->send();
-        echo json_encode(['message' => 'Form submitted successfully']);
+        $stmt = $con->prepare("INSERT INTO `contactmessages2` (`name`, `email`, `purpose`, `subject`, `message`) VALUES (?,?,?,?,?)");
+    
+        $stmt->bind_param("sssss", $name, $mail, $purpose, $subject, $message);
+        if ($stmt->execute()) {
+            echo json_encode(['message' => 'Form submitted successfully']);
+        } else {
+            echo json_encode(['message' => 'Error submitting form']);
+        }
+
     } catch (Exception $e) {
         echo json_encode(['message' => 'Please enter a real email']);
 
