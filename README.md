@@ -20,7 +20,7 @@
     - [ ] Change Images.
     - [ ] Consider restyling it.
   - [x] Footer.
-    - [ ] Roadmap page/footer fix.
+    - [x] Roadmap page/footer fix.
   - [x] Dashboard
 - [x] Backend:
   - [x] Email. > Wait for Dr. Samar's response to apply modifications.
