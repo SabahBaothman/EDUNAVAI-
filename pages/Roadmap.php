@@ -24,6 +24,8 @@ include('../includes/links.php');
     <?php
 include('../includes/footer.php');
 ?>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
 </body>
 
 </html>
