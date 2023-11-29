@@ -22,5 +22,5 @@
 
     <hr>
     <p>&copy; 2023 EduNavAi All rights reserved.</p>
-    <p>Jeddah EduNavAi@gmail.com</p>
+    <p>Jeddah edunavigationai@gmail.com</p>
 </footer>
