@@ -1514,14 +1514,6 @@ footer h5 {
     /* Use a lighter font-weight */
 }
 
-footer nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* Center the links horizontally */
-    margin-left: -50px;
-}
-
 footer nav a {
     text-decoration: none;
     color: white;
