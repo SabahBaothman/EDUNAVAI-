@@ -14,18 +14,18 @@ include('../includes/header.php');
     include('../includes/links.php');
     ?>
 
-    <div class="feedback-section">
-        <h4>Give Us</h4>
+    <div id=feedback-page-container class="feedback-section">
+        <p>Give Us</p>
         <h1><span class="A">A</span> <span class="Feedback">Feedback</span></h1>
 
-            <form action="../db/validation.php" method="post" id="form">
+        <form class="center" action="../db/validation.php" method="post" id="form">
             <div class="personal-information">
                 <fieldset>
                     <legend>Personal Information</legend>
                     <!-- Input box for First Name -->
                     <div class="nameSection">
-                        <label for="firstName">First Name:</label>
                         <div class="input">
+                            <label class="line" for="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstName" placeholder="Rima">
                             <div class="error"></div>
 
@@ -33,8 +33,8 @@ include('../includes/header.php');
 
 
                         <!-- Input box for Last Name -->
-                        <label for="lastName">Last Name:</label>
                         <div class="input">
+                            <label for="lastName">Last Name</label>
                             <input type="text" id="lastName" name="lastName" placeholder="Alghamdi">
                             <div class="error"></div>
                         </div>
@@ -42,17 +42,17 @@ include('../includes/header.php');
 
                     <br>
 
-                    <div class="SectionTwo">
+                    <div class="nameSection">
                         <!-- Input box for Email ID -->
-                        <label for="email">Email ID:</label>
                         <div class="input">
+                            <label for="email">Email ID</label>
                             <input type="text" id="email" name="email" placeholder="Example@gmail.com">
                             <div class="error"></div>
                         </div>
 
                         <!-- Input box for Age -->
-                        <label for="age">Age:</label>
                         <div class="input">
+                            <label for="age">Age</label>
                             <input type="number" id="age" name="age" min="1" max="100" placeholder="22">
                             <div class="error"></div>
                         </div>
@@ -60,21 +60,34 @@ include('../includes/header.php');
 
                     <br>
 
-                    <div class="SectionThree">
-                        <!-- Additional input box for Phone Number -->
-                        <label for="phoneNumber">Phone Number:</label>
+                    <div class="nameSection">
                         <div class="input">
+                            <label for="phoneNumber">Phone Number</label>
                             <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(966) 562334579">
                             <div class="error"></div>
                         </div>
 
-                        <!-- Additional input box (e.g., for Address) -->
-                        <label for="address">Address:</label>
                         <div class="input">
+                            <label for="address">Address</label>
                             <input type="text" id="address" name="address" placeholder="Jeddah">
                             <div class="error"></div>
                         </div>
                     </div>
+
+                    <div class="nameSection">
+                        <div class="input">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="City">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" name="country" placeholder="Country">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+
                 </fieldset>
             </div>
 
@@ -98,10 +111,12 @@ include('../includes/header.php');
                     <br>
 
                     <!-- Textarea box for comments -->
+                    <div class="inputt">
                     <label class="label1" for="comments">Comments:</label>
                     <br>
                     <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your Message"></textarea>
                     <div class="error"></div>
+                    </div>
 
                     <br>
 
@@ -135,20 +150,8 @@ include('../includes/header.php');
             <!-- Submit button -->
             <button onclick="" type="submit"> submit</button>
 
-
-
-
-
-            <!-- Rest of the form... -->
         </form>
     </div>
-
-
-
-
-
-
-
 
     <!-- Include the footer file  -->
     <?php
