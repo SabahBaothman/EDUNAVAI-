@@ -1,7 +1,7 @@
 # EDUNAVAI
 - [ ] Front End:
   - [x] Landing Page.
-    - [ ] Modify gif typo.
+    - [x] Modify gif typo.
   - [x] Roadmap Generator.
   - [x] Roadmap.
   - [x] About Us.
@@ -15,7 +15,7 @@
   - [x] Feedback.
     - [ ] Modify input tags style.
   - [x] Contact. > Wait for Dr. Samar's response to apply modifications.
-    - [ ] Add Email.
+    - [x] Add Email.
   - [x] Image Gallery. > Maybe we can modify the style.
     - [ ] Change Images.
     - [ ] Consider restyling it.
@@ -29,7 +29,7 @@
   - [x] Roadmap form.
   - [x] Roadmap Generation + Results.
     - [x] Use other information in the prompt.
-    - [ ] Verify accepting the conditions. >> is required enough?
+    - [x] Verify accepting the conditions. >> is required enough?
     - [x] Decide which fields are mandatory and implement the verification for them.
     - [x] Add export (print maybe) button (Done as PNG)
     - [x] Display Inputs such as: age, skils etc for the roadmap generated.
