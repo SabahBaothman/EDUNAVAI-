@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
             hasErrors = true; // Set flag to indicate validation error
         } else if (!isValidPhoneNumber(phoneNumber)) {
             console.log('Phone number is not valid.');
-            phoneNumberError.textContent = 'Enter a valid phone number starting with 5 and having 10 digits';
+            phoneNumberError.textContent = 'Enter a valid phone number starting with 5 and having 9 digits';
             hasErrors = true; // Set flag to indicate validation error
         }
 
@@ -195,6 +195,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to check if the phone number is in a valid format
     function isValidPhoneNumber(phoneNumber) {
         // You can use a simple regex for basic phone number validation
-        return /^5\d{9}$/.test(phoneNumber);
+        return /^5\d{8}$/.test(phoneNumber);
     }
 });
