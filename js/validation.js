@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var age = document.getElementById('age').value.trim();
         var phoneNumber = document.getElementById('phoneNumber').value.trim();
         var address = document.getElementById('address').value.trim();
+        var city = document.getElementById('city').value.trim();
+        var country = document.getElementById('country').value.trim();
         var comments = document.getElementById('comments').value.trim();
         var courseInterest = document.getElementById('courseInterest').value;
         var subscribe = document.getElementById('subscribe').checked;
@@ -36,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var ageError = document.querySelector('#age + .error');
         var phoneNumberError = document.querySelector('#phoneNumber + .error');
         var addressError = document.querySelector('#address + .error');
+        var cityError = document.querySelector('#city + .error'); // new field
+        var countryError = document.querySelector('#country + .error');
         var commentsError = document.querySelector('#comments + .error');
         var courseInterestError = document.querySelector('#courseInterest + .error');
         var subscriptionOptionsError = document.getElementById('subscriptionOptionsError');
@@ -51,6 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
         ageError.textContent = '';
         phoneNumberError.textContent = '';
         addressError.textContent = '';
+        cityError.textContent = '';
+        countryError.textContent = '';
         commentsError.textContent = '';
         courseInterestError.textContent = '';
         subscriptionOptionsError.textContent = '';
@@ -111,6 +117,19 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('Address is empty.');
             addressError.textContent = 'Address cannot be empty';
             hasErrors = true; // Set flag to indicate validation error
+        }
+
+        if (city === '') {
+            console.log('City is empty.');
+            cityError.textContent = 'City cannot be empty';
+            hasErrors = true; 
+        }
+        
+        // Check if country is empty
+        if (country === '') {
+            console.log('Country is empty.');
+            countryError.textContent = 'Country cannot be empty';
+            hasErrors = true; 
         }
 
         // Check if comments is empty
