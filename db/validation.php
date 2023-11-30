@@ -22,6 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $age = $_POST['age'];
     $phoneNumber = $_POST['phoneNumber'];
     $address = $_POST['address'];
+    $city = $_POST['city']; 
+    $country = $_POST['country'];  
     $satisfaction = $_POST['satisfaction'];
     $comments = $_POST['comments'];
     $subscribe = isset($_POST['subscribe']) ? 1 : 0;
@@ -52,8 +54,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Save data to the database
-    $stmt = $conn->prepare("INSERT INTO feedback (first_name, last_name, email, age, phone_number, address, satisfaction, comments, subscribe, promotional_emails, product_updates, course_interest) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssissssiiss", $firstName, $lastName, $email, $age, $phoneNumber, $address, $satisfaction, $comments, $subscribe, $promotionalEmails, $productUpdates, $courseInterest);
+    $stmt = $conn->prepare("INSERT INTO feedback (first_name, last_name, email, age, phone_number, address,city, country, satisfaction, comments, subscribe, promotional_emails, product_updates, course_interest) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?, ?, ?)");
+    $stmt->bind_param("sssissssssiiss", $firstName, $lastName, $email, $age, $phoneNumber, $address, $city, $country, $satisfaction, $comments, $subscribe, $promotionalEmails, $productUpdates, $courseInterest);
     $stmt->execute();
     $stmt->close();
     $conn->close();
@@ -63,3 +65,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Error: Invalid request method.";
 }
 ?>
+
