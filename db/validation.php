@@ -1,13 +1,25 @@
 <?php
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$dbName = "feedback";
-$port = 3307; // Change this to your actual port number
+// local database
+//$host = "localhost";
+//$user = "root";
+//$password = "";
+//$dbName = "feedback";
+//$port = 3307; 
+// Connect to the database
+// $conn = new mysqli($host, $user, $password, $dbName, $port);
+
+<?php
+
+//host database
+$host = "sql211.infinityfree.com";
+$user = "if0_35094917";
+$password = "tgwZQE4oYLo";
+$dbName = "if0_35094917_EduNavAI";
 
 // Connect to the database
-$conn = new mysqli($host, $user, $password, $dbName, $port);
+$conn = new mysqli($host, $user, $password, $dbName);
+
 
 // Check connection
 if ($conn->connect_error) {
