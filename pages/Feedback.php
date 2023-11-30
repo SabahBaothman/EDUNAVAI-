@@ -60,10 +60,10 @@ include('../includes/header.php');
 
                     <br>
 
-                    <div class="nameSection">
+                                       <div class="nameSection">
                         <div class="input">
                             <label for="phoneNumber">Phone Number</label>
-                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(966) 562334579">
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="5xxxxxxxx">
                             <div class="error"></div>
                         </div>
 
@@ -77,17 +77,17 @@ include('../includes/header.php');
                     <div class="nameSection">
                         <div class="input">
                             <label for="city">City</label>
-                            <input type="text" id="city" name="city" placeholder="City">
+                            <input type="text" id="city" name="city" placeholder="Jeddah">
                             <div class="error"></div>
                         </div>
 
                         <div class="input">
                             <label for="country">Country</label>
-                            <input type="text" id="country" name="country" placeholder="Country">
+                            <input type="text" id="country" name="country" placeholder="KSA">
                             <div class="error"></div>
                         </div>
                     </div>
-
+                    
                 </fieldset>
             </div>
 
