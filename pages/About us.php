@@ -17,7 +17,7 @@ include('../includes/links.php');
  <!-- Section 1: About Us -->
  <div class="section about-section">
         <div class="left-half">
-        <h5> Welcome to </h5>
+
         <h1><span class="about">About</span> <span class="us">Us</span></h1>
             <h5>We are on mission to transform education by providing </br> personalized guidance, empowering learners to unlock </br> their full potential and achieve success on their terms.</h5>
             <button onclick="scrollToSection('vision-section')">Learn More</button>
@@ -44,7 +44,7 @@ include('../includes/links.php');
         <div class="service-box">
             <div class="icon-box">
                 <!-- Add your icon here -->
-                <i class="fa-solid fa-robot"></i>
+                 <img src="../media/images/goal.png"/>
                         </div>
             <h4>EduNavAi uses AI for dynamic suggestions that evolve with user preferences.</h4>
         </div>
@@ -53,7 +53,7 @@ include('../includes/links.php');
             <div class="icon-box">
                 <!-- Add your icon here -->
 
-                <i class="fa-solid fa-map-location-dot"></i>
+                 <img src="../media/images/map.png"/>
                 </div>
                 <h4>EduNavAi tailors unique learning paths using advanced algorithms.</h4>
         </div>
@@ -61,7 +61,7 @@ include('../includes/links.php');
         <div class="service-box">
             <div class="icon-box">
                 <!-- Add your icon here -->
-                <i class="fa-solid fa-bullseye"></i>
+                <img src="../media/images/goal.png"/>
                                     </div>
             <h4>EduNavAi conducts thorough skill assessments to identify strengths and areas for improvement. </h4>
         </div>
