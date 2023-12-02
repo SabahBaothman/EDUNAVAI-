@@ -13,7 +13,7 @@
   - [x] Table.
   - [x] Resumes.
   - [x] Feedback.
-    - [ ] Modify input tags style.
+    - [x] Modify input tags style.
   - [x] Contact. > Wait for Dr. Samar's response to apply modifications.
     - [x] Add Email.
   - [x] Image Gallery. > Maybe we can modify the style.
