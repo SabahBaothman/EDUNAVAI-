@@ -198,8 +198,8 @@ nav.span {
 }
 
 .right-half img {
-    width: 85%;
-    margin-left: -30px;
+    width: 100%;
+    /* margin-left: -30px; */
 }
 
 
@@ -250,7 +250,11 @@ nav.span {
     box-shadow: 0 0 40px rgba(173, 216, 230, 1), 0 0 80px rgba(173, 216, 230, 1);
     /* Adjust the color and spread as needed */
 }
+.about-section{
+    width: 60%;
+    margin: 0 auto 0 auto;
 
+}
 /*  Section 2: Our Vision  */
 
 #vision-section {
@@ -281,12 +285,15 @@ nav.span {
 
 /* services-section */
 .services-section {
+    width: fit-content;
     text-align: left;
     display: flex;
     flex-direction: column;
     /* Arrange children in a column */
     align-items: flex-start;
     /* Align children to the start of the flex container */
+    margin: 50px auto 0 auto;
+
 }
 
 .services-section h1 {
@@ -304,19 +311,22 @@ nav.span {
     background-clip: text;
     color: transparent;
     /* Set text color to transparent */
+    
 }
 
 .services-section h4 {
-    margin-bottom: 20px;
     color: white;
     font-weight: normal;
     letter-spacing: 1.5px;
     line-height: 1.5;
     margin: 0;
+    margin-bottom: 1vw;
+
 }
 
 /* service boxes */
 .service-boxes {
+
     display: flex;
     justify-content: center;
     /* Center the boxes horizontally */
@@ -324,9 +334,7 @@ nav.span {
     /* Center the boxes vertically */
     flex-wrap: wrap;
     /* Allow boxes to wrap to the next line */
-    margin-top: 50px;
-    /* Add margin at the top if needed */
-    margin-left: 20px;
+    
 }
 
 .service-box {
@@ -365,10 +373,7 @@ nav.span {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid;
-    border-image: linear-gradient(to right, var(--lightBlue), var(--darkPurple));
-    border-image-slice: 1;
-    border-radius: 30px;
+
     box-sizing: border-box;
     /* Include the border in the element's dimensions */
 }
@@ -380,7 +385,13 @@ nav.span {
     z-index: 1;
     /* Place the content above the pseudo-element */
 }
-
+.icon-box img {
+    width: 80px;
+    font-size: 35px;
+    color: white;
+    z-index: 2;
+    /* Place the content above the pseudo-element */
+}
 .service-box p {
     color: white;
     margin: 20px;
