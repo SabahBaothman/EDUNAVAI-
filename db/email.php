@@ -1,6 +1,13 @@
 <?php
 
-// Connect to the database
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
+
 $host = "localhost";
 $user = "root";
 $password = "";
@@ -8,12 +15,37 @@ $dbName = "web";
 $con = new mysqli($host, $user, $password, $dbName);
 
 
+function verify_email($toVerify)
+{
+    $ch = curl_init();
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
-require 'phpmailer/src/SMTP.php';
+    // Set the URL that you want to GET by using the CURLOPT_URL option.
+    curl_setopt($ch, CURLOPT_URL, 'http://emailvalidation.abstractapi.com/v1/?api_key=a463c8e422a34d83aa6b65c119c0ad6f&email=' . $toVerify);
+
+    // Set CURLOPT_RETURNTRANSFER so that the content is returned as a variable.
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    // Set CURLOPT_FOLLOWLOCATION to true to follow redirects.
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+
+    // Execute the request.
+    $data = curl_exec($ch);
+
+    // Close the cURL handle.
+    curl_close($ch);
+
+    $response = json_decode($data, true);
+
+    // Print the data out onto the page.
+    // echo $data;
+
+    if ($response["deliverability"] === "DELIVERABLE") {
+        return true;
+    } else {
+        return false;
+    }
+
+}
 
 
 if (
@@ -23,50 +55,56 @@ if (
     isset($_POST['subject']) && !empty($_POST['subject']) &&
     isset($_POST['message']) && !empty($_POST['message'])
 ) {
-    // Form Inputs
+    // Initialize variables with form data
     $name = $_POST['name'];
     $mail = $_POST['mail'];
     $purpose = $_POST['purpose'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
-    //Email Info
+
     $to = "edunavigationai@gmail.com";
-    $body = "";
-    $body .= "From: " . $name . "\n";
-    $body .= "Email: " . $mail . "\n\n";
-    $body .= "Message: " . $message . "\n";
+    $Message_body = "";
+    $Message_body .= "From: " . $name . "<br>";
+    $Message_body .= "Email: " . $mail . "<br>";
+    $Message_body .= "Purpose: " . $purpose . "<br><br>";
+    $Message_body .= "Subject: " . $subject . "<br>";
+    $Message_body .= "Message: " . $message . "<br>";
 
-    $phpMailer = new PHPMailer(true);
-    try {
-        $phpMailer->isSMTP();                                            //Send using SMTP
-        $phpMailer->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
-        $phpMailer->SMTPAuth = true;                                   //Enable SMTP authentication
-        $phpMailer->Username = 'edunavigationai@gmail.com';                     //SMTP username
-        $phpMailer->Password = 'vqsfawpmwbbyyclf';                               //SMTP password
-        $phpMailer->SMTPSecure = 'ssl';          //Enable implicit TLS encryption
-        $phpMailer->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $verified = verify_email($mail);
+    if($verified){
 
-        $phpMailer->setFrom($to);
-        $phpMailer->addAddress($mail, $name);     //Add a recipient
+        $phpMailer = new PHPMailer(true);
+        $phpMailer->isSMTP();
+        $phpMailer->Host = 'smtp.gmail.com';
+        $phpMailer->SMTPAuth = true;
+        $phpMailer->Username = 'edunavigationai@gmail.com';
+        $phpMailer->Password = 'vqsfawpmwbbyyclf';
+        $phpMailer->SMTPSecure = 'ssl';
+        $phpMailer->Port = 465;
 
-        $phpMailer->isHTML(true);                                  //Set email format to HTML
+        $phpMailer->setFrom($mail);
+        $phpMailer->addAddress($to, $name);
+        $phpMailer->isHTML(true);
         $phpMailer->Subject = $subject;
-        $phpMailer->Body = $body;
-
+        $phpMailer->Body = $Message_body;
         $phpMailer->send();
+
         $stmt = $con->prepare("INSERT INTO `contactmessages2` (`name`, `email`, `purpose`, `subject`, `message`) VALUES (?,?,?,?,?)");
-    
         $stmt->bind_param("sssss", $name, $mail, $purpose, $subject, $message);
+
         if ($stmt->execute()) {
-            echo json_encode(['message' => 'Form submitted successfully']);
+            echo json_encode(['message' => 'Email sent successfully']);
         } else {
             echo json_encode(['message' => 'Error submitting form']);
         }
 
-    } catch (Exception $e) {
-        echo json_encode(['message' => 'Please enter a real email']);
+    }else{
+        echo json_encode(['message' => 'Please enter a real Email']);
 
     }
+
+
 }
+
 
 ?>
