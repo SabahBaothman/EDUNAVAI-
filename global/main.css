@@ -1057,6 +1057,7 @@ nav.span {
     /* Adjust the color and spread as needed */
 }
 
+
 /* Hide the default arrow */
 /*  feedback form */
 
@@ -1495,51 +1496,128 @@ hr {
 
 footer {
     background-color: var(--black);
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
+    padding: 1vw;
+    text-align: left;
+    border-radius: 0;
     margin-top: 30px;
+    padding: auto 25% auto 25%;
 }
-
+footer >div{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto 0 auto;
+}
+footer #footer-container{
+    display: flex;
+}
 footer h2 {
     letter-spacing: 2px;
     /* Add space between each letter */
     color: white;
-    margin-bottom: -5px;
+    line-height: 0%;
+height: 100%;
 }
 
 footer h5 {
     color: white;
     font-weight: lighter;
-    /* Use a lighter font-weight */
+    margin: 0 !important;
+    color: var(--light-grey);
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+
 }
 
 footer nav a {
     text-decoration: none;
     color: white;
-    /* Set link color to white */
-    margin: 0 10px;
+    margin: 0;
+    font-size: 0.7vw !important;
     /* Add space on both sides of each link */
 }
-
-footer hr {
+footer nav{
+    margin: 1vw 0 0 0 !important;
+   
+}
+footer .h-line {
+    display: inline-block;
+    width: 100%;
     margin: 20px 0;
     border: 0;
-    border-top: 1px solid #ddd;
-}
+    color:#d5d3db !important;
+    background-image: none !important;
 
+}
+footer hr {
+    width: 100%;
+    margin: 20px 0;
+    height: 0.8px;
+    border: 0;
+    color:#d5d3db !important;
+    background-image: linear-gradient(to right,#8d83ac, #8d83ac) !important;
+
+}
 footer p {
     color: #888;
     font-size: 13px;
     margin-bottom: -10px;
+    display: block;
 
 }
 
 
+footer #nav-logo-holder{
+    display: inline-block !important;
+    margin: 0.5vw 0 0.5vw 0 !important;
+}
 
+footer  #nav-logo-holder img{
+     display: inline-block !important;
+}
+footer #nav-title-holder{
+    display: inline-block !important;
+    width: fit-content !important;
+    height: min-content;
+    margin: auto auto auto 0.2vw;
 
+}
 
+.footer-grid-wrapper {
+    width: 50%;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-content: space-around;
+    justify-content: stretch;
+    justify-items: stretch;
+    display: grid;
+}
+.footer-block {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.footer-title-text {
+    color: #fff;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 
+  .footer-text {
+    color: #d7d7d8;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: Open Sans, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
 /* ROADMAP */
 .card-week {
     width: 50%;
