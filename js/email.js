@@ -43,4 +43,13 @@ function verifyEmail(email) {
   return regex.test(email);
 }
 
+document.getElementById('sendMsssage').addEventListener('click', function() {
+  // Add the 'loading' class to the button when clicked
+  this.classList.add('loading');
 
+  // Simulate a loading delay (you can replace this with your actual loading logic)
+  setTimeout(() => {
+    // Remove the 'loading' class after the loading is complete
+    this.classList.remove('loading');
+  }, 3000); // Replace 3000 with the duration of your loading process in milliseconds
+});
