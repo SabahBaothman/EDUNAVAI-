@@ -1849,3 +1849,8 @@ padding-top: 40px;
 .email-section th + th {
     margin-left: 10px;
 }
+
+
+.loading {
+    cursor:wait !important;
+}
