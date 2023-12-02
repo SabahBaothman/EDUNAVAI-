@@ -5,7 +5,7 @@
   - [x] Roadmap Generator.
   - [x] Roadmap.
   - [x] About Us.
-    - [ ] Modify alignment - vision images.
+    - [x] Modify alignment - vision images.
     - [ ] Resumes in the same page.
   - [ ] ~~support.~~
   - [x] Video.
@@ -17,7 +17,7 @@
   - [x] Contact. > Wait for Dr. Samar's response to apply modifications.
     - [x] Add Email.
   - [x] Image Gallery. > Maybe we can modify the style.
-    - [ ] Change Images.
+    - [x] Change Images.
     - [ ] Consider restyling it.
   - [x] Footer.
     - [x] Roadmap page/footer fix.
