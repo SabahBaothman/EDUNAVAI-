@@ -3,7 +3,7 @@
 <nav>
 
 <!-- Holder for the website logo -->
-<a href="../pages/index.php" style="display: flex;">
+<a href="../pages/index.php" style="display: flex; text-decoration: none;">
 <span id="nav-logo-holder">
     <img id="logo" src="../media/images/logo.png" width="80px">
 </span>
