@@ -22,7 +22,7 @@
 
             <div class="footer-block">
                 <div class="footer-title-text">More Pages</div>
-                <a href="./table.php" class="footer-text">Frequently Asked Questions</a>
+                <a href="./FAQ.php" class="footer-text">Frequently Asked Questions</a>
                 <a href="./PictureGallery.php" class="footer-text">Inspirational Quotes</a>
                 <a href="./contact.php" class="footer-text">Contact</a>
 
