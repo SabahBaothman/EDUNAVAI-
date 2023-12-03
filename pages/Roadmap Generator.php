@@ -53,7 +53,7 @@ include('../includes/links.php');
                 
             </div>
             <div class="full-width">
-                <button id="next" onclick="scrollToSection('form-section-2')">Next</button>
+                <button class="next" onclick="scrollToSection('form-section-2')">Next</button>
             </div>
                     <div id="scroll-here-2">
                     </div>
@@ -83,7 +83,7 @@ include('../includes/links.php');
                                 placeholder="e,g, 4 weeks">
                         </label>
                     </div>
-                    <button id="next" onclick="scrollToSection('scroll-here-3')">Next</button>
+                    <button class="next" onclick="scrollToSection('scroll-here-3')">Next</button>
                     <div id="scroll-here-3">
                     </div>
                     <div class="card-brands careers-card form-section" id="form-section-3">
@@ -107,7 +107,7 @@ include('../includes/links.php');
                         </label>
                     </div>
 
-                    <button id="next" onclick="scrollToSection('scroll-here-5')">Next</button>
+                    <button class="next" onclick="scrollToSection('scroll-here-5')">Next</button>
                     <div id="scroll-here-4">
                     </div>
                     <div id="scroll-here-5">
