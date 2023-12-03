@@ -155,7 +155,7 @@ nav.span {
     padding: 0.1vw;
 }
 
-#next {
+#next, .next {
     position: absolute;
     right: 5vw;
     top: 50%;
@@ -1451,7 +1451,7 @@ hr {
 }
 
 
-#generate-button {
+#generate-button, .next {
     background-color: var(--darkPurple);
     color: white;
     border: none;
